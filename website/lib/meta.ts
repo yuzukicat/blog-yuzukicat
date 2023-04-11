@@ -16,13 +16,3 @@ export type Meta = {
     link: string;
   };
   
-  export type NewsletterMeta = {
-    title: string;
-    date: string;
-    description: string;
-  };
-  
-  export interface NewsletterMetaWithLink extends NewsletterMeta {
-    link: string;
-  }
-  

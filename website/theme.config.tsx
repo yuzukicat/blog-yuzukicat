@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import { Callout, defineConfig, Header, useConfig } from '@theguild/components';
 import { Article } from '@/article';
 import { AUTHORS } from '@/authors';
-import { BlogCardList, Newsletter } from '@/components';
+import { BlogCardList, Video } from '@/components';
 import { CodeSandbox } from '@/shared/embed/code-sandbox';
 import { Gfycat } from '@/shared/embed/gfycat';
 import { LinkPreview } from '@/shared/embed/link-preview';
@@ -16,12 +16,12 @@ import { asArray } from './lib/as-array';
 const siteName = 'The Guild';
 
 function ensureAbsolute(url: string): string {
-  return url.startsWith('/') ? `https://the-guild.dev${url}` : url;
+  return url.startsWith('/') ? `https://kamisu66.com${url}` : url;
 }
 
 export default defineConfig({
   siteName,
-  docsRepositoryBase: 'https://github.com/the-guild-org/the-guild-website/tree/master/website', // base URL for the docs repository
+  docsRepositoryBase: 'https://github.com/yuzukicat/blog-yuzukicat/tree/master/website', // base URL for the docs repository
   navbar: {
     component: (
       <Header
@@ -36,7 +36,7 @@ export default defineConfig({
     const { frontMatter, title } = useConfig();
     const { description, authors, tags, thumbnail, date, updateDate } = frontMatter;
     const image =
-      thumbnail || `https://og-image.the-guild.dev/?product=GUILD&title=${encodeURI(title)}`;
+      thumbnail || `https://og-image.kamisu66.com/?product=GUILD&title=${encodeURI(title)}`;
 
     return {
       description: description || `${siteName}: Modern API Platform and Ecosystem that scales`,
@@ -79,7 +79,6 @@ export default defineConfig({
       <>
         <Article />
         {children}
-        <Newsletter />
         {similarArticles.length > 0 && (
           <>
             <h3 className="text-center text-[28px] font-extrabold dark:text-[#FCFCFC]">
@@ -93,6 +92,7 @@ export default defineConfig({
   },
   components: {
     Callout,
+    Video,
     CodeSandbox,
     LinkPreview,
     OgCard,

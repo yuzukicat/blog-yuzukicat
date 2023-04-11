@@ -106,7 +106,7 @@ export const LinkPreview = ({ link }: { link: string }): ReactElement => {
     }
 
     const fetchData = async () => {
-      const absoluteLink = link.startsWith('/') ? `https://the-guild.dev${link}` : link;
+      const absoluteLink = link.startsWith('/') ? `https://kamisu66.com${link}` : link;
       const previewData = await fetchPreview(absoluteLink);
 
       setData(previewData);

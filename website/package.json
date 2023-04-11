@@ -1,4 +1,9 @@
 {
+	"name": "website",
+	"version": "0.0.0",
+	"type": "module",
+	"license": "MIT",
+	"private": true,
 	"scripts": {
 		"dev": "pnpm generate:blogs-meta && next",
 		"generate:blogs-meta": "pnpm ts:run lib/generate-blogs-meta.ts",

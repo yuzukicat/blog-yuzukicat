@@ -1,10 +1,10 @@
 ---
 title: Blog
-description: Announcements about our Open-Source projects
+description: Blog site of yuzukicat.
 skipSync: true
 ---
 
-import { Newsletter, Heading, BlogCardList, TagList } from '@/components'
+import { Heading, BlogCardList, TagList } from '@/components'
 import { HeroSection } from '@/hero-section'
 import { useSSG } from 'nextra/ssg'
 import { getAllArticles } from '../lib/get-all-articles'
@@ -45,11 +45,11 @@ export default function Blog() {
   return (
     <>
       <HeroSection>
-        <Heading>The Guild's blog</Heading>
+        <Heading>A Cat knows human language</Heading>
       </HeroSection>
       <div className="container max-w-[1200px]">
         <TagList tags={allTags} withCount asLink className="mt-10 mb-20" />
-        {!tagFilters && <Newsletter />}
+        {!tagFilters}
         <BlogCardList articles={articles} />
       </div>
     </>
