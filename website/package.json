@@ -1,17 +1,25 @@
 {
 	"scripts": {
-		"dev": "pnpm next",
+		"dev": "pnpm generate:blogs-meta && next",
+		"generate:blogs-meta": "pnpm ts:run lib/generate-blogs-meta.ts",
 		"start": "next start",
 		"ts:run": "tsup"
 	},
 	"dependencies": {
+		"@radix-ui/react-tooltip": "1.0.5",
 		"@stitches/react": "1.2.8",
 		"@theguild/components": "4.5.9",
 		"clsx": "1.2.1",
+		"core-js-pure": "3.30.0",
 		"date-fns": "2.29.3",
+		"immer": "9.0.21",
+		"link-preview-node": "1.0.7",
 		"next": "13.3.0",
 		"nextra": "2.3.0",
+		"nprogress": "0.2.0",
 		"react": "18.2.0",
+		"react-avatar": "5.0.3",
+		"react-children-utilities": "2.9.0",
 		"react-dom": "18.2.0",
 		"remark-frontmatter": "4.0.1",
 		"remark-parse-frontmatter": "1.0.3"

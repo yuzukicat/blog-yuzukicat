@@ -1,11 +1,7 @@
 {
-    "index": {
-      "theme": {
-        "layout": "raw"
-      }
-    },
-    "blog": {
+    "*": {
       "type": "page",
+      "display": "hidden",
       "theme": {
         "layout": "full",
         "timestamp": false

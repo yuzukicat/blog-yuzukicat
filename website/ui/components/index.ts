@@ -1,6 +1,11 @@
+export { Avatar } from './avatar';
+export { BlogCardList } from './blog-card-list';
 export { Button } from './button';
 export { Description } from './description';
 export { Heading } from './heading';
+export { Image } from './image';
 export { Input } from './input';
 export * from './link';
 export { Newsletter } from './newsletter';
+export { TagList } from './tag-list';
+export { Video } from './video';
