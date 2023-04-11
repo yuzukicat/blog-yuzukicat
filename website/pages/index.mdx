@@ -8,7 +8,12 @@ description:
 import { useSSG } from 'nextra/ssg'
 import { ClientLogosSection } from '@/client-logos-section'
 import { Button, Description, Heading, Newsletter } from '@/components'
-export const getStaticProps = async () => ({})
+import { getAllArticles } from '../lib/get-all-articles'
+export const getStaticProps = async () => ({
+    props: {
+      ssg: await getAllArticles()
+     }
+})
 export default function IndexPage() {
   return (
     <>
