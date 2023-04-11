@@ -1,0 +1,19 @@
+{
+	"scripts": {
+		"dev": "pnpm next"
+	},
+	"dependencies": {
+		"@stitches/react": "1.2.8",
+		"@theguild/components": "4.5.9",
+		"clsx": "1.2.1",
+		"next": "13.3.0",
+		"nextra": "2.3.0",
+		"react": "18.2.0",
+		"react-dom": "18.2.0"
+	},
+	"devDependencies": {
+		"@types/node": "18.15.11",
+		"@types/react": "18.0.34",
+		"typescript": "5.0.4"
+	}
+}
