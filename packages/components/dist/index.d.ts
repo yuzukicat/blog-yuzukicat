@@ -1,5 +1,5 @@
 import * as react from 'react';
-import { ReactElement, ReactNode, CSSProperties, ComponentProps, Dispatch, SetStateAction } from 'react';
+import { ReactElement, ReactNode, CSSProperties, ComponentProps, Dispatch, SetStateAction, FormEvent } from 'react';
 import * as url from 'url';
 import { ImageProps } from 'next/image';
 import { LinkProps } from 'next/link';
@@ -7,9 +7,12 @@ import { ReactPlayerProps } from 'react-player';
 export { InformationCircleIcon } from 'nextra/icons';
 import { DocsThemeConfig } from 'nextra-theme-docs';
 export { Bleed, Callout, Card, Cards, Collapse, DocsThemeConfig, FileTree, Navbar, NotFoundPage, ServerSideErrorPage, Steps, Tab, Tabs, useConfig, useTheme } from 'nextra-theme-docs';
+export { PRODUCTS } from './products.js';
+export { default as Giscus } from '@giscus/react';
 export { useMounted } from 'nextra/hooks';
 export { useMDXComponents } from 'nextra/mdx';
 export { RemoteContent, useSSG } from 'nextra/ssg';
+import '@theguild/algolia';
 
 declare const Anchor: react.ForwardRefExoticComponent<Omit<{
     href: string | url.UrlObject;
@@ -129,6 +132,77 @@ interface IHeroVideoProps {
     video: IVideo;
     videoProps?: ReactPlayerProps;
 }
+interface IHeroIllustrationProps {
+    className?: string;
+    title: string | ReactNode;
+    description: string | ReactNode;
+    flipped?: boolean;
+    link?: ILink;
+    image: ImageProps;
+}
+interface IHeroGradientProps {
+    className?: string;
+    title: string | ReactNode;
+    description: string | ReactNode;
+    colors?: string[];
+    version?: string | ReactNode;
+    link?: ILink | ILink[];
+    image?: ImageProps;
+}
+interface IHeroMarketplaceProps {
+    className?: string;
+    title: string | ReactNode;
+    description: string | ReactNode;
+    link: ILink;
+    image?: ImageProps;
+}
+interface IMarketplaceItemProps {
+    title: string;
+    description: string | ReactNode;
+    tags?: string[];
+    modal?: {
+        header: {
+            image?: ImageProps;
+            description?: string | ILink;
+        };
+        content: string | (() => ReactNode) | ReactNode;
+    };
+    update: string;
+    image: ImageProps;
+    link: Omit<ILink, 'children'>;
+}
+interface IMarketplaceItemsProps {
+    items: IMarketplaceItemProps[];
+}
+interface IMarketplaceListProps {
+    className?: string;
+    title?: string;
+    placeholder: string | ReactElement;
+    pagination: number;
+    items: IMarketplaceItemProps[];
+}
+interface IMarketplaceSearchProps {
+    className?: string;
+    title: string | ReactNode;
+    placeholder: string;
+    primaryList: IMarketplaceListProps;
+    secondaryList?: IMarketplaceListProps;
+    queryList?: IMarketplaceListProps;
+    tagsFilter?: string[] | ReadonlyArray<string>;
+}
+interface ISchemaPageProps {
+    schemaName: string;
+    tags?: string[];
+    editorData: Omit<IEditorProps, 'icon'>[];
+}
+interface IEditorProps {
+    children: ReactNode;
+    title: string;
+    frameworks?: string[];
+    schema?: string;
+    image?: string;
+    operations?: string;
+}
 
 type CardsColorfulProps = {
     className?: string;
@@ -146,7 +220,13 @@ declare const FeatureList: ({ title, description, items, link, className, }: IFe
 
 declare const FooterExtended: ({ className, }: IFooterExtendedProps) => ReactElement;
 
-declare const Header: ({ accentColor, activeLink, themeSwitch, transformLinks, className, sameSite, }: IHeaderProps) => ReactElement;
+declare const Header: ({ accentColor, activeLink, themeSwitch, transformLinks, search, className, sameSite, searchBarProps, }: IHeaderProps) => ReactElement;
+
+declare const HeroGradient: ({ title, description, link, version, colors, image, className, }: IHeroGradientProps) => ReactElement;
+
+declare const HeroIllustration: ({ title, description, link, image, flipped, className, }: IHeroIllustrationProps) => ReactElement;
+
+declare const HeroMarketplace: ({ title, description, link, className, image, }: IHeroMarketplaceProps) => ReactElement;
 
 declare const HeroVideo: ({ title, description, link, video, flipped, className, videoProps, }: IHeroVideoProps) => ReactElement;
 
@@ -210,6 +290,10 @@ declare function Image(props: ImageProps): ReactElement;
 
 declare const InfoList: ({ title, items, className }: IInfoListProps) => ReactElement;
 
+declare const MarketplaceList: ({ title, placeholder, items, pagination, className, }: IMarketplaceListProps) => ReactElement;
+
+declare const MarketplaceSearch: ({ title, tagsFilter, placeholder, primaryList, secondaryList, queryList, className, }: IMarketplaceSearchProps) => ReactElement;
+
 declare const mdxComponents: {
     [tag: string]: (props: object) => ReactElement;
 };
@@ -222,6 +306,11 @@ declare const Nav: ({ isOpen, setOpen, children, className, }: {
     className?: string | undefined;
     children: ReactNode;
 }) => ReactElement;
+
+type NewsletterProps = {
+    onNewsletterSubmit: (e: FormEvent, value: string) => void;
+};
+declare const Newsletter: ({ onNewsletterSubmit }: NewsletterProps) => ReactElement;
 
 declare const NPMBadge: ({ name }: {
     name: string;
@@ -236,6 +325,8 @@ type Command = {
 declare const PackageCmd: ({ packages }: {
     packages: (string | Command)[];
 }) => ReactElement;
+
+declare const SearchBar: ({ version, ...restProps }: ISearchBarProps) => ReactElement;
 
 declare function defineConfig({ siteName: originalSiteName, ...config }: DocsThemeConfig & {
     siteName: string;
@@ -263,4 +354,4 @@ declare module 'react' {
     }
 }
 
-export { Anchor, ArrowUpRightIcon, Banner, Button, CardsColorful, CaretIcon, CaretSlimIcon, CheckIcon, CloseIcon, ExternalLinkIcon, FeatureList, FooterExtended, HamburgerIcon, HashTagIcon, Header, HeroVideo, IFeatureListProps, IFooterExtendedProps, IHeaderLink, IHeaderProps, IHeroVideoProps, IInfoListProps, ILink, IModalProps, ISearchBarProps, Image, InfoList, MailIcon, Mermaid, Modal, MoonIcon, MoreIcon, NPMBadge, Nav, PackageCmd, PageIcon, SearchIcon, ShareIcon, defineConfig, fetchPackageInfo, mdxComponents };
+export { Anchor, ArrowUpRightIcon, Banner, Button, CardsColorful, CaretIcon, CaretSlimIcon, CheckIcon, CloseIcon, ExternalLinkIcon, FeatureList, FooterExtended, HamburgerIcon, HashTagIcon, Header, HeroGradient, HeroIllustration, HeroMarketplace, HeroVideo, IEditorProps, IFeatureListProps, IFooterExtendedProps, IHeaderLink, IHeaderProps, IHeroGradientProps, IHeroIllustrationProps, IHeroMarketplaceProps, IHeroVideoProps, IInfoListProps, ILink, IMarketplaceItemProps, IMarketplaceItemsProps, IMarketplaceListProps, IMarketplaceSearchProps, IModalProps, ISchemaPageProps, ISearchBarProps, Image, InfoList, MailIcon, MarketplaceList, MarketplaceSearch, Mermaid, Modal, MoonIcon, MoreIcon, NPMBadge, Nav, Newsletter, PackageCmd, PageIcon, SearchBar, SearchIcon, ShareIcon, defineConfig, fetchPackageInfo, mdxComponents };

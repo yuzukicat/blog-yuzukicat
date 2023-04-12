@@ -1,0 +1,16 @@
+[
+  {
+    "title": "A New Year for GraphQL Schema Stitching",
+    "description": "2021 is the year to give Schema Stitching a fresh look after its recent renovation",
+    "date": "2021-01-14",
+    "authors": [
+      "gmac"
+    ],
+    "tags": [
+      "graphql",
+      "graphql-tools",
+      "schema-stitching"
+    ],
+    "link": "/blog/a-new-year-for-schema-stitching"
+  }
+]
