@@ -1,0 +1,79 @@
+{
+  "name": "@theguild/components",
+  "version": "4.5.9",
+  "type": "module",
+  "repository": {
+    "url": "https://github.com/the-guild-org/docs",
+    "directory": "packages/components"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "exports": {
+    "./style.css": "./style.css",
+    "./search-bar-v2.css": "./search-bar-v2.css",
+    "./package.json": "./package.json",
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./next.config": {
+      "import": "./dist/next.config.mjs",
+      "types": "./dist/next.config.d.ts"
+    },
+    "./*": {
+      "import": "./dist/*.js",
+      "types": "./dist/*.d.ts"
+    }
+  },
+  "types": "./index.d.ts",
+  "files": [
+    "index.d.ts",
+    "index.js",
+    "next.config.d.ts",
+    "next.config.mjs"
+  ],
+  "scripts": {
+  },
+  "peerDependencies": {
+    "next": "^12.3.1 || ^13.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "dependencies": {
+    "@algolia/autocomplete-theme-classic": "1.8.3",
+    "@giscus/react": "2.2.8",
+    "@next/bundle-analyzer": "13.2.4",
+    "@radix-ui/react-navigation-menu": "1.1.2",
+    "clsx": "1.2.1",
+    "focus-trap-react": "10.1.1",
+    "fuzzy": "^0.1.3",
+    "mermaid": "10.0.2",
+    "next-videos": "1.5.0",
+    "nextra": "2.3.0",
+    "nextra-theme-docs": "2.3.0",
+    "react-instantsearch-dom": "6.39.1",
+    "react-paginate": "8.1.5",
+    "react-player": "2.12.0",
+    "remark-mdx-disable-explicit-jsx": "0.1.0",
+    "search-insights": "2.4.0",
+    "semver": "^7.3.8",
+    "unist-util-visit": "4.1.2",
+    "use-debounce": "9.0.3"
+  },
+  "devDependencies": {
+    "@types/dedent": "0.7.0",
+    "@types/mdast": "3.0.11",
+    "@types/mermaid": "9.1.0",
+    "@types/react-dom": "18.0.11",
+    "@types/semver": "7.3.13",
+    "dedent": "0.7.0",
+    "esbuild-plugin-svgr": "1.1.0",
+    "graphql": "16.6.0",
+    "next": "13.2.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "tailwindcss": "3.2.7",
+    "unified": "10.1.2"
+  },
+  "sideEffects": false
+}
