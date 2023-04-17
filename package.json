@@ -6,8 +6,7 @@
     "ci:lint": "eslint --output-file eslint_report.json --format json .",
     "lint": "eslint .",
     "prettier": "prettier --cache --write --list-different .",
-    "prettier:check": "prettier --cache --check .",
-    "build": "pnpm install && pnpm -C website build"
+    "prettier:check": "prettier --cache --check ."
   },
   "devDependencies": {
     "@theguild/eslint-config": "0.9.0",
