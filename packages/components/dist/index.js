@@ -111,11 +111,15 @@ var CardsColorful = ({ cards, className }) => /* @__PURE__ */ jsx4("section", { 
 
 // src/components/footer-extended.tsx
 import clsx5 from "clsx";
-import { jsx as jsx5 } from "react/jsx-runtime";
+import { jsx as jsx5, jsxs as jsxs2 } from "react/jsx-runtime";
 var FooterExtended = ({
   className
 }) => {
-  return /* @__PURE__ */ jsx5("footer", { className: clsx5("bg-white text-xs dark:bg-[#111]", className), children: /* @__PURE__ */ jsx5("div", { className: "container max-w-[90rem] border-t border-gray-300 dark:border-gray-800", children: /* @__PURE__ */ jsx5("div", { className: "my-8 flex flex-col gap-6 pt-2 pb-4 lg:flex-row", children: /* @__PURE__ */ jsx5("div", { className: "flex w-full flex-row gap-6", children: /* @__PURE__ */ jsx5("p", { className: "text-pink-500 dark:text-gray-200", children: "@2023 Yuzuki.Cat" }) }) }) }) });
+  return /* @__PURE__ */ jsx5("footer", { className: clsx5("bg-white text-xs dark:bg-[#111]", className), children: /* @__PURE__ */ jsx5("div", { className: "container max-w-[90rem] border-t border-gray-300 dark:border-gray-800", children: /* @__PURE__ */ jsx5("div", { className: "my-8 flex flex-col gap-6 pt-2 pb-4 lg:flex-row items-center sm:items-start", children: /* @__PURE__ */ jsx5("div", { className: "flex w-full flex-row gap-6", children: /* @__PURE__ */ jsxs2("p", { className: "text-pink-500 dark:text-gray-200 mt-6 text-xs", children: [
+    "\xA9 ",
+    (/* @__PURE__ */ new Date()).getFullYear(),
+    " Yuzuki.Cat"
+  ] }) }) }) }) });
 };
 
 // src/components/header.tsx
@@ -176,9 +180,9 @@ var DEFAULT_PATH_PROPS = {
 };
 
 // src/components/icons/arrow-up-right.tsx
-import { jsx as jsx6, jsxs as jsxs2 } from "react/jsx-runtime";
+import { jsx as jsx6, jsxs as jsxs3 } from "react/jsx-runtime";
 var ArrowUpRightIcon = ({ className }) => {
-  return /* @__PURE__ */ jsxs2(
+  return /* @__PURE__ */ jsxs3(
     "svg",
     {
       width: "24",
@@ -246,9 +250,9 @@ function CheckIcon({ className }) {
 }
 
 // src/components/icons/close.tsx
-import { jsx as jsx10, jsxs as jsxs3 } from "react/jsx-runtime";
+import { jsx as jsx10, jsxs as jsxs4 } from "react/jsx-runtime";
 var CloseIcon = ({ className }) => {
-  return /* @__PURE__ */ jsxs3(
+  return /* @__PURE__ */ jsxs4(
     "svg",
     {
       width: "24",
@@ -267,9 +271,9 @@ var CloseIcon = ({ className }) => {
 };
 
 // src/components/icons/external-link.tsx
-import { jsx as jsx11, jsxs as jsxs4 } from "react/jsx-runtime";
+import { jsx as jsx11, jsxs as jsxs5 } from "react/jsx-runtime";
 var ExternalLinkIcon = ({ className }) => {
-  return /* @__PURE__ */ jsxs4(
+  return /* @__PURE__ */ jsxs5(
     "svg",
     {
       width: "24",
@@ -295,9 +299,9 @@ var ExternalLinkIcon = ({ className }) => {
 };
 
 // src/components/icons/hamburger.tsx
-import { jsx as jsx12, jsxs as jsxs5 } from "react/jsx-runtime";
+import { jsx as jsx12, jsxs as jsxs6 } from "react/jsx-runtime";
 var HamburgerIcon = ({ className }) => {
-  return /* @__PURE__ */ jsxs5(
+  return /* @__PURE__ */ jsxs6(
     "svg",
     {
       width: "24",
@@ -341,9 +345,9 @@ var HashTagIcon = ({ className }) => {
 };
 
 // src/components/icons/mail.tsx
-import { jsx as jsx14, jsxs as jsxs6 } from "react/jsx-runtime";
+import { jsx as jsx14, jsxs as jsxs7 } from "react/jsx-runtime";
 var MailIcon = ({ className }) => {
-  return /* @__PURE__ */ jsxs6(
+  return /* @__PURE__ */ jsxs7(
     "svg",
     {
       width: "24",
@@ -396,9 +400,9 @@ var MoonIcon = ({ className }) => {
 };
 
 // src/components/icons/more.tsx
-import { jsx as jsx16, jsxs as jsxs7 } from "react/jsx-runtime";
+import { jsx as jsx16, jsxs as jsxs8 } from "react/jsx-runtime";
 var MoreIcon = ({ className }) => {
-  return /* @__PURE__ */ jsxs7(
+  return /* @__PURE__ */ jsxs8(
     "svg",
     {
       width: "18",
@@ -466,9 +470,9 @@ var PageIcon = ({ className }) => {
 };
 
 // src/components/icons/search.tsx
-import { jsx as jsx18, jsxs as jsxs8 } from "react/jsx-runtime";
+import { jsx as jsx18, jsxs as jsxs9 } from "react/jsx-runtime";
 var SearchIcon = ({ className }) => {
-  return /* @__PURE__ */ jsxs8(
+  return /* @__PURE__ */ jsxs9(
     "svg",
     {
       width: "24",
@@ -495,9 +499,9 @@ var SearchIcon = ({ className }) => {
 };
 
 // src/components/icons/share.tsx
-import { jsx as jsx19, jsxs as jsxs9 } from "react/jsx-runtime";
+import { jsx as jsx19, jsxs as jsxs10 } from "react/jsx-runtime";
 var ShareIcon = ({ className }) => {
-  return /* @__PURE__ */ jsxs9(
+  return /* @__PURE__ */ jsxs10(
     "svg",
     {
       width: "18",
@@ -557,7 +561,7 @@ var toggleLockBodyScroll = (state) => {
 };
 
 // src/components/nav.tsx
-import { jsx as jsx20, jsxs as jsxs10 } from "react/jsx-runtime";
+import { jsx as jsx20, jsxs as jsxs11 } from "react/jsx-runtime";
 var Nav = ({
   isOpen,
   setOpen,
@@ -567,7 +571,7 @@ var Nav = ({
   useEffect2(() => {
     toggleLockBodyScroll(isOpen);
   }, [isOpen]);
-  return /* @__PURE__ */ jsxs10(
+  return /* @__PURE__ */ jsxs11(
     "nav",
     {
       className: clsx6(
@@ -644,7 +648,7 @@ function Image(props) {
 }
 
 // src/components/modal.tsx
-import { jsx as jsx22, jsxs as jsxs11 } from "react/jsx-runtime";
+import { jsx as jsx22, jsxs as jsxs12 } from "react/jsx-runtime";
 var Modal = ({
   image,
   title,
@@ -660,7 +664,7 @@ var Modal = ({
     if (!description) {
       return;
     }
-    return typeof description === "object" ? /* @__PURE__ */ jsxs11(Anchor, { className: "inline-flex gap-x-1.5 hover:opacity-60", ...description, children: [
+    return typeof description === "object" ? /* @__PURE__ */ jsxs12(Anchor, { className: "inline-flex gap-x-1.5 hover:opacity-60", ...description, children: [
       /* @__PURE__ */ jsx22("p", { className: "line-clamp-1", children: description.children }),
       /* @__PURE__ */ jsx22(ExternalLinkIcon, { className: "h-4 w-4 shrink-0" })
     ] }) : /* @__PURE__ */ jsx22("p", { className: "line-clamp-1", children: description });
@@ -670,7 +674,7 @@ var Modal = ({
       onCancel();
     }
   }, [visible, escapePress, onCancel]);
-  return /* @__PURE__ */ jsxs11("div", { className: clsx7("fixed inset-0 z-[50] backdrop-blur-sm", !visible && "hidden", className), children: [
+  return /* @__PURE__ */ jsxs12("div", { className: clsx7("fixed inset-0 z-[50] backdrop-blur-sm", !visible && "hidden", className), children: [
     /* @__PURE__ */ jsx22(
       "div",
       {
@@ -686,7 +690,7 @@ var Modal = ({
           fallbackFocus: "#tgc-modal",
           clickOutsideDeactivates: true
         },
-        children: /* @__PURE__ */ jsxs11(
+        children: /* @__PURE__ */ jsxs12(
           "div",
           {
             className: clsx7(
@@ -713,13 +717,13 @@ var Modal = ({
             ),
             id: "tgc-modal",
             children: [
-              /* @__PURE__ */ jsxs11(
+              /* @__PURE__ */ jsxs12(
                 "div",
                 {
                   className: "\n              flex\n              items-center\n              gap-x-2\n              border-b\n              border-gray-200\n              p-6\n              dark:border-gray-700\n              md:gap-x-4\n            ",
                   children: [
                     image && /* @__PURE__ */ jsx22(Image, { ...image, className: clsx7("w-10 md:w-16", image.className) }),
-                    /* @__PURE__ */ jsxs11("div", { children: [
+                    /* @__PURE__ */ jsxs12("div", { children: [
                       /* @__PURE__ */ jsx22("h2", { className: "m-0 text-lg font-semibold text-black dark:text-gray-100 md:text-xl", children: title }),
                       /* @__PURE__ */ jsx22("p", { className: "m-0 text-xs text-gray-500 dark:text-gray-100", children: renderDescription() })
                     ] }),
@@ -752,7 +756,7 @@ import { createRoot } from "react-dom/client";
 import insightsClient from "search-insights";
 
 // src/components/search-bar-v2/side-preview.tsx
-import { Fragment as Fragment2, jsx as jsx23, jsxs as jsxs12 } from "react/jsx-runtime";
+import { Fragment as Fragment2, jsx as jsx23, jsxs as jsxs13 } from "react/jsx-runtime";
 var SidePreview = ({
   item,
   components: { Highlight, Snippet: Snippet2 },
@@ -761,7 +765,7 @@ var SidePreview = ({
   if (!item) {
     return null;
   }
-  return /* @__PURE__ */ jsxs12(
+  return /* @__PURE__ */ jsxs13(
     "div",
     {
       className: "flex h-[600px] select-text flex-col overflow-y-auto p-10",
@@ -776,11 +780,11 @@ var SidePreview = ({
         ),
         /* @__PURE__ */ jsx23("p", { className: "mt-0 mb-6 w-full text-center text-base font-light text-gray-600 dark:text-gray-400", children: item.hierarchy.slice(1).join(" > ") }),
         /* @__PURE__ */ jsx23("p", { className: "text-center text-center text-sm font-light text-black dark:text-gray-400", children: /* @__PURE__ */ jsx23(Snippet2, { hit: item, attribute: "content" }) }),
-        item.toc.length > 1 && /* @__PURE__ */ jsxs12(Fragment2, { children: [
+        item.toc.length > 1 && /* @__PURE__ */ jsxs13(Fragment2, { children: [
           /* @__PURE__ */ jsx23("h4", { className: "mt-10 mb-1 w-full text-lg font-light text-gray-600 dark:text-gray-400", children: "Table of content:" }),
           /* @__PURE__ */ jsx23("ol", { className: "text-left text-base font-light text-gray-600 dark:text-gray-400", children: item.toc.map((tocItem) => /* @__PURE__ */ jsx23("li", { children: tocItem.title }, tocItem.title)) })
         ] }),
-        /* @__PURE__ */ jsxs12("button", { className: "mb-5 mt-8 text-center text-center text-lg font-light text-black dark:text-gray-400", children: [
+        /* @__PURE__ */ jsxs13("button", { className: "mb-5 mt-8 text-center text-center text-lg font-light text-black dark:text-gray-400", children: [
           'Press "Enter" to open ',
           item.type,
           " \u2192"
@@ -791,9 +795,9 @@ var SidePreview = ({
 };
 
 // src/components/search-bar-v2/templates.tsx
-import { jsx as jsx24, jsxs as jsxs13 } from "react/jsx-runtime";
+import { jsx as jsx24, jsxs as jsxs14 } from "react/jsx-runtime";
 var templates = {
-  item: ({ item: hit, components }) => /* @__PURE__ */ jsx24(Anchor, { href: hit.url, className: "aa-ItemLink", children: /* @__PURE__ */ jsx24("div", { className: "aa-ItemContent", children: /* @__PURE__ */ jsxs13("div", { className: "aa-ItemContentBody", children: [
+  item: ({ item: hit, components }) => /* @__PURE__ */ jsx24(Anchor, { href: hit.url, className: "aa-ItemLink", children: /* @__PURE__ */ jsx24("div", { className: "aa-ItemContent", children: /* @__PURE__ */ jsxs14("div", { className: "aa-ItemContentBody", children: [
     /* @__PURE__ */ jsx24("div", { className: "aa-ItemContentTitle", children: /* @__PURE__ */ jsx24(components.Highlight, { hit, attribute: "title" }) }),
     /* @__PURE__ */ jsx24("div", { className: "aa-ItemContentSubtitle", children: /* @__PURE__ */ jsx24("em", { children: hit.type }) })
   ] }) }) }),
@@ -819,7 +823,7 @@ var debounced = debouncePromise(
 );
 
 // src/components/search-bar-v2/index.tsx
-import { jsx as jsx25, jsxs as jsxs14 } from "react/jsx-runtime";
+import { jsx as jsx25, jsxs as jsxs15 } from "react/jsx-runtime";
 var SearchBarV2 = ({
   accentColor,
   placeholder = "Search our documentations",
@@ -871,7 +875,7 @@ var SearchBarV2 = ({
           !query || status === "loading" ? (
             // eslint-disable-next-line react/jsx-no-useless-fragment -- false positive
             /* @__PURE__ */ jsx25(Fragment7, {})
-          ) : /* @__PURE__ */ jsxs14("div", { className: "my-20 w-full text-center text-xl font-light text-gray-600 dark:text-gray-400", children: [
+          ) : /* @__PURE__ */ jsxs15("div", { className: "my-20 w-full text-center text-xl font-light text-gray-600 dark:text-gray-400", children: [
             'No results for "',
             query,
             '"'
@@ -881,8 +885,8 @@ var SearchBarV2 = ({
       render({ children, state, Fragment: Fragment7, components }, root) {
         const render = getRender(root);
         render(
-          /* @__PURE__ */ jsxs14(Fragment7, { children: [
-            /* @__PURE__ */ jsxs14("div", { className: "flex h-[600px] flex-row", children: [
+          /* @__PURE__ */ jsxs15(Fragment7, { children: [
+            /* @__PURE__ */ jsxs15("div", { className: "flex h-[600px] flex-row", children: [
               /* @__PURE__ */ jsx25("div", { className: "min-w-[400px]", children }),
               /* @__PURE__ */ jsx25(
                 SidePreview,
@@ -893,7 +897,7 @@ var SearchBarV2 = ({
                 }
               )
             ] }),
-            /* @__PURE__ */ jsxs14(
+            /* @__PURE__ */ jsxs15(
               Anchor,
               {
                 href: "https://algolia.com",
@@ -991,7 +995,7 @@ var SearchBarV2 = ({
 };
 
 // src/components/search-bar.tsx
-import { Fragment as Fragment4, jsx as jsx26, jsxs as jsxs15 } from "react/jsx-runtime";
+import { Fragment as Fragment4, jsx as jsx26, jsxs as jsxs16 } from "react/jsx-runtime";
 var algoliaClient = algoliaSearch2(algoliaConfig.appID, algoliaConfig.apiKey, {
   hosts: algoliaConfig.hosts
 });
@@ -1063,7 +1067,7 @@ var SearchBox = ({
       action: "",
       role: "search",
       className: "\n        sticky\n        -top-6\n        z-10\n        -m-6\n        bg-white\n        p-6\n        shadow-sm\n        dark:bg-[#111]\n      ",
-      children: /* @__PURE__ */ jsxs15(
+      children: /* @__PURE__ */ jsxs16(
         "div",
         {
           className: "\n          flex\n          w-full\n          items-center\n          gap-x-1\n          rounded-lg\n          border-2\n          bg-gray-50\n          p-2.5\n          text-lg\n          text-gray-500\n          [border-color:var(--accentColor)]\n          dark:bg-neutral-800\n          dark:text-gray-300\n        ",
@@ -1108,9 +1112,9 @@ var StateResults = ({
   searchResults,
   children
 }) => {
-  const content = searchState && searchResults && !searchResults.nbHits && searchResults.query.length > 0 && /* @__PURE__ */ jsxs15("span", { children: [
+  const content = searchState && searchResults && !searchResults.nbHits && searchResults.query.length > 0 && /* @__PURE__ */ jsxs16("span", { children: [
     "No results for ",
-    /* @__PURE__ */ jsxs15("strong", { children: [
+    /* @__PURE__ */ jsxs16("strong", { children: [
       '"',
       searchState.query,
       '"'
@@ -1143,27 +1147,27 @@ var Hits = ({ hits, accentColor }) => {
     return /* @__PURE__ */ jsx26(PageIcon, { className: "text-gray-500 hover:text-white dark:text-white" });
   };
   const groupedHits = transformItems(hits);
-  return /* @__PURE__ */ jsx26(Fragment4, { children: groupedHits.map((hit) => /* @__PURE__ */ jsxs15("section", { style: { "--color": accentColor }, children: [
+  return /* @__PURE__ */ jsx26(Fragment4, { children: groupedHits.map((hit) => /* @__PURE__ */ jsxs16("section", { style: { "--color": accentColor }, children: [
     /* @__PURE__ */ jsx26("h2", { className: "mb-4 mt-8 text-base font-semibold [color:var(--color)]", children: hit.level }),
     hit.items.map((subHit) => {
       let content;
       if (subHit.hierarchy[subHit.type] && subHit.type === "lvl1") {
-        content = /* @__PURE__ */ jsxs15(Fragment4, { children: [
+        content = /* @__PURE__ */ jsxs16(Fragment4, { children: [
           /* @__PURE__ */ jsx26(Snippet, { hit: subHit, attribute: "hierarchy.lvl1" }),
           subHit.content ? /* @__PURE__ */ jsx26(Snippet, { tagName: "p", hit: subHit, attribute: "content" }) : /* @__PURE__ */ jsx26(Snippet, { tagName: "p", hit: subHit, attribute: "hierarchy.lvl1" })
         ] });
       } else if (subHit.hierarchy[subHit.type] && ["lvl2", "lvl3", "lvl4", "lvl5", "lvl6"].includes(subHit.type)) {
-        content = /* @__PURE__ */ jsxs15(Fragment4, { children: [
+        content = /* @__PURE__ */ jsxs16(Fragment4, { children: [
           /* @__PURE__ */ jsx26(Snippet, { hit: subHit, attribute: `hierarchy.${subHit.type}` }),
           /* @__PURE__ */ jsx26(Snippet, { tagName: "p", hit: subHit, attribute: "hierarchy.lvl1" })
         ] });
       } else if (subHit.type === "content") {
-        content = /* @__PURE__ */ jsxs15(Fragment4, { children: [
+        content = /* @__PURE__ */ jsxs16(Fragment4, { children: [
           /* @__PURE__ */ jsx26(Snippet, { hit: subHit, attribute: "content" }),
           /* @__PURE__ */ jsx26(Snippet, { tagName: "p", hit: subHit, attribute: "hierarchy.lvl1" })
         ] });
       }
-      return /* @__PURE__ */ jsxs15(
+      return /* @__PURE__ */ jsxs16(
         Anchor,
         {
           href: subHit.url,
@@ -1200,8 +1204,8 @@ var SearchBarComponent = ({
   const CustomSearchBox = connectSearchBox(SearchBox);
   const CustomStateResults = connectStateResults(StateResults);
   const CustomHits = connectHits(Hits);
-  return /* @__PURE__ */ jsxs15(Fragment4, { children: [
-    /* @__PURE__ */ jsxs15(
+  return /* @__PURE__ */ jsxs16(Fragment4, { children: [
+    /* @__PURE__ */ jsxs16(
       "button",
       {
         className: clsx8(
@@ -1239,7 +1243,7 @@ var SearchBarComponent = ({
         ]
       }
     ),
-    /* @__PURE__ */ jsx26(Modal, { title, visible: modalOpen, placement: "top", onCancel: () => handleModal(false), children: /* @__PURE__ */ jsxs15(
+    /* @__PURE__ */ jsx26(Modal, { title, visible: modalOpen, placement: "top", onCancel: () => handleModal(false), children: /* @__PURE__ */ jsxs16(
       InstantSearch,
       {
         indexName: algoliaConfig.searchIndex,
@@ -1262,7 +1266,7 @@ var SearchBarComponent = ({
 };
 
 // src/components/header.tsx
-import { Fragment as Fragment5, jsx as jsx27, jsxs as jsxs16 } from "react/jsx-runtime";
+import { Fragment as Fragment5, jsx as jsx27, jsxs as jsxs17 } from "react/jsx-runtime";
 var Header = ({
   accentColor,
   activeLink,
@@ -1318,7 +1322,7 @@ var Header = ({
         !sameSite && "max-md:hidden",
         className
       ),
-      children: /* @__PURE__ */ jsxs16(
+      children: /* @__PURE__ */ jsxs17(
         "div",
         {
           className: "\n          container\n          flex\n          max-w-[90rem]\n          items-center\n          justify-between\n          pl-[max(env(safe-area-inset-left),1.5rem)]\n          pr-[max(env(safe-area-inset-right),1.5rem)]\n        ",
@@ -1332,11 +1336,11 @@ var Header = ({
               }
             ),
             /* @__PURE__ */ jsx27("div", { className: "md:absolute" }),
-            /* @__PURE__ */ jsx27(Root2, { asChild: true, children: /* @__PURE__ */ jsxs16(List, { children: [
+            /* @__PURE__ */ jsx27(Root2, { asChild: true, children: /* @__PURE__ */ jsxs17(List, { children: [
               /* @__PURE__ */ jsx27(Viewport, { className: "absolute top-10 right-0 z-50" }),
-              /* @__PURE__ */ jsxs16(Nav, { isOpen: mobileNavOpen, setOpen: setMobileNavOpen, className: "gap-2", children: [
+              /* @__PURE__ */ jsxs17(Nav, { isOpen: mobileNavOpen, setOpen: setMobileNavOpen, className: "gap-2", children: [
                 links.map(({ label, menu, ...link }) => {
-                  const linkEl = /* @__PURE__ */ jsxs16(
+                  const linkEl = /* @__PURE__ */ jsxs17(
                     Anchor,
                     {
                       onClick: sameSite && mobileNavOpen ? toggleNav : void 0,
@@ -1372,7 +1376,7 @@ var Header = ({
                       ]
                     }
                   );
-                  return /* @__PURE__ */ jsx27(Item, { value: label, children: menu && shouldUseMenus ? /* @__PURE__ */ jsxs16(Fragment5, { children: [
+                  return /* @__PURE__ */ jsx27(Item, { value: label, children: menu && shouldUseMenus ? /* @__PURE__ */ jsxs17(Fragment5, { children: [
                     /* @__PURE__ */ jsx27(Trigger, { asChild: true, children: linkEl }),
                     /* @__PURE__ */ jsx27(Content, { asChild: true, children: menu })
                   ] }) : /* @__PURE__ */ jsx27(Link, { asChild: true, children: linkEl }) }, label);
@@ -1420,7 +1424,7 @@ import { useRouter } from "next/router";
 import clsx10 from "clsx";
 import { useMounted } from "nextra/hooks";
 import ReactPlayer from "react-player/lazy";
-import { jsx as jsx28, jsxs as jsxs17 } from "react/jsx-runtime";
+import { jsx as jsx28, jsxs as jsxs18 } from "react/jsx-runtime";
 var HeroVideo = ({
   title,
   description,
@@ -1432,7 +1436,7 @@ var HeroVideo = ({
 }) => {
   const { basePath } = useRouter();
   const mounted = useMounted();
-  return /* @__PURE__ */ jsx28("section", { className: clsx10("bg-gray-100 dark:bg-neutral-800", className), children: /* @__PURE__ */ jsxs17(
+  return /* @__PURE__ */ jsx28("section", { className: clsx10("bg-gray-100 dark:bg-neutral-800", className), children: /* @__PURE__ */ jsxs18(
     "div",
     {
       className: clsx10(
@@ -1448,7 +1452,7 @@ var HeroVideo = ({
         flipped && "md:flex-row-reverse"
       ),
       children: [
-        /* @__PURE__ */ jsxs17("div", { className: "mt-8 mb-16 md:my-0", children: [
+        /* @__PURE__ */ jsxs18("div", { className: "mt-8 mb-16 md:my-0", children: [
           /* @__PURE__ */ jsx28("h2", { className: "m-0 max-w-sm text-2xl font-bold text-black dark:text-gray-50 md:text-3xl", children: title }),
           /* @__PURE__ */ jsx28("p", { className: "mt-1 mb-3 max-w-md text-base text-gray-500 dark:text-gray-400", children: description }),
           link && /* @__PURE__ */ jsx28(
@@ -1512,10 +1516,10 @@ var HeroVideo = ({
 
 // src/components/info-list.tsx
 import clsx11 from "clsx";
-import { jsx as jsx29, jsxs as jsxs18 } from "react/jsx-runtime";
-var InfoList = ({ title, items, className }) => /* @__PURE__ */ jsx29("section", { className: clsx11("bg-white dark:bg-[#111]", className), children: /* @__PURE__ */ jsxs18("div", { className: "container max-w-[90rem] py-12", children: [
+import { jsx as jsx29, jsxs as jsxs19 } from "react/jsx-runtime";
+var InfoList = ({ title, items, className }) => /* @__PURE__ */ jsx29("section", { className: clsx11("bg-white dark:bg-[#111]", className), children: /* @__PURE__ */ jsxs19("div", { className: "container max-w-[90rem] py-12", children: [
   title && /* @__PURE__ */ jsx29("h2", { className: "mt-0 mb-4 text-2xl font-bold text-black dark:text-gray-50 md:text-3xl", children: title }),
-  /* @__PURE__ */ jsx29("div", { className: "flex flex-wrap", children: items.map((item, index) => /* @__PURE__ */ jsxs18(
+  /* @__PURE__ */ jsx29("div", { className: "flex flex-wrap", children: items.map((item, index) => /* @__PURE__ */ jsxs19(
     "section",
     {
       className: "\n              mb-9\n              box-border\n              flex\n              w-full\n              max-w-lg\n              flex-col\n              pr-10\n              last:mb-0\n              md:w-1/2\n              lg:mb-0\n              lg:w-1/3\n          ",
@@ -1538,7 +1542,7 @@ var InfoList = ({ title, items, className }) => /* @__PURE__ */ jsx29("section",
 // src/components/mdx-components.tsx
 import { useRouter as useRouter2 } from "next/router";
 import clsx12 from "clsx";
-import { jsx as jsx30, jsxs as jsxs19 } from "react/jsx-runtime";
+import { jsx as jsx30, jsxs as jsxs20 } from "react/jsx-runtime";
 var mdxComponents = {
   source({ src, type, ...props }) {
     if (!src) {
@@ -1550,7 +1554,7 @@ var mdxComponents = {
     }
     return /* @__PURE__ */ jsx30("source", { ...props, src, type: type || `video/${ext}` });
   },
-  video: ({ className, children, ...props }) => /* @__PURE__ */ jsxs19("video", { className: clsx12("mt-6 w-full", className), autoPlay: true, loop: true, muted: true, ...props, children: [
+  video: ({ className, children, ...props }) => /* @__PURE__ */ jsxs20("video", { className: clsx12("mt-6 w-full", className), autoPlay: true, loop: true, muted: true, ...props, children: [
     children,
     "Your browser does not support HTML video."
   ] }),
@@ -1628,7 +1632,7 @@ var PackageCmd = ({ packages }) => {
 // src/define-config.tsx
 import { useRouter as useRouter3 } from "next/router";
 import { Navbar, useConfig } from "nextra-theme-docs";
-import { Fragment as Fragment6, jsx as jsx32, jsxs as jsxs20 } from "react/jsx-runtime";
+import { Fragment as Fragment6, jsx as jsx32, jsxs as jsxs21 } from "react/jsx-runtime";
 function defineConfig({
   siteName: originalSiteName,
   ...config
@@ -1648,7 +1652,7 @@ function defineConfig({
       component: /* @__PURE__ */ jsx32(FooterExtended, {})
     },
     navbar: {
-      component: (props) => /* @__PURE__ */ jsxs20(Fragment6, { children: [
+      component: (props) => /* @__PURE__ */ jsxs21(Fragment6, { children: [
         /* @__PURE__ */ jsx32(Header, { accentColor: "#1cc8ee", searchBarProps: { version: "v2" } }),
         /* @__PURE__ */ jsx32(Navbar, { ...props })
       ] })
