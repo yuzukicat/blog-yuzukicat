@@ -9,7 +9,7 @@
 	  "build": "pnpm generate:blogs-meta && next build && next-sitemap --config next-sitemap.config.cjs",
 	  "check-links": "pnpm ts:run check-links.ts",
 	  "dev": "pnpm generate:blogs-meta && next",
-	  "export": "next export && pnpm ts:run rss-generator.ts",
+	  "export": "next export",
 	  "generate:blogs-meta": "pnpm ts:run lib/generate-blogs-meta.ts",
 	  "start": "next start",
 	  "ts:run": "tsup"
