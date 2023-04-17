@@ -6,10 +6,10 @@ type Author = {
   };
   
   export const AUTHORS: Record<string, Author> = {
-    gmac: {
-      name: 'Greg MacWilliam',
-      link: 'https://twitter.com/gmacwilliam',
-      github: 'gmac',
+    yuzukicat: {
+      name: 'Yuzuki',
+      link: 'https://twitter.com/Nougatshepard',
+      github: 'yuzukicat',
     },
   };
   
