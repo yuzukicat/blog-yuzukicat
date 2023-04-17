@@ -21,6 +21,13 @@ function ensureAbsolute(url: string): string {
 export default defineConfig({
   siteName,
   docsRepositoryBase: 'https://github.com/yuzukicat/blog-yuzukicat/tree/master/website', // base URL for the docs repository
+  editLink: {
+    text: '',
+  },
+  feedback: {
+    content: ' ',
+    labels: ''
+  },
   navbar: {
     component: (
       <Header

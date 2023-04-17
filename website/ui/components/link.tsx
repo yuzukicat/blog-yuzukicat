@@ -9,7 +9,7 @@ export const Link = ({
   ...props
 }: Omit<ComponentProps<'a'>, 'ref'>): ReactElement => {
   return (
-    <Anchor href={href} className={clsx('text-[#1cc8ee] hover:underline', className)} {...props}>
+    <Anchor href={href} className={clsx('text-[#E97191] hover:underline', className)} {...props}>
       {children}
     </Anchor>
   );

@@ -22,20 +22,16 @@ export const BlogCardList = ({
           href={article.link}
           className="
           flex
-          w-[278px]
           cursor-pointer
           flex-col
           overflow-hidden
           rounded-[20px]
-          border
-          border-solid
           bg-white
           transition-colors
-          hover:border-[#7F818C]
-          hover:!no-underline
-          dark:border-transparent
+          hover:underline
+          hover:text-[#E97191]
           dark:bg-[#101218]
-          hover:dark:border-[#7F818C]"
+          hover:dark:text-[#7F818C]"
         >
           <img
             src={article.thumbnail ?? article.image}
