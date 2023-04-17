@@ -3,14 +3,13 @@ import { useRouter } from 'next/router';
 import { Callout, defineConfig, Header, useConfig } from '@theguild/components';
 import { Article } from '@/article';
 import { AUTHORS } from '@/authors';
-import { BlogCardList, Video } from '@/components';
+import {  Video } from '@/components';
 import { CodeSandbox } from '@/shared/embed/code-sandbox';
 import { Gfycat } from '@/shared/embed/gfycat';
 import { LinkPreview } from '@/shared/embed/link-preview';
 import { OgCard } from '@/shared/embed/og-card';
 import { StackBlitz } from '@/shared/embed/stack-blitz';
 import { Tweet } from '@/shared/embed/tweet';
-import blogsMeta from './dist/blogs-meta.json';
 import { asArray } from './lib/as-array';
 
 const siteName = 'The Guild';
@@ -55,21 +54,6 @@ export default defineConfig({
   },
   main: function Main({ children }) {
     const { route } = useRouter();
-    const config = useConfig();
-    const { tags } = config.frontMatter;
-
-    const similarArticles = tags
-      ? blogsMeta
-          .filter(
-            article =>
-              article.link !== route &&
-              (tags.length === 0 || article.tags?.some(tag => tags.includes(tag))),
-          )
-          .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
-          .slice(0, 12)
-          .sort(() => 0.5 - Math.random())
-          .slice(0, 4)
-      : [];
 
     if (!route.startsWith('/blog/') || route.startsWith('/blog/tag')) {
       return children as ReactElement;
@@ -79,14 +63,6 @@ export default defineConfig({
       <>
         <Article />
         {children}
-        {similarArticles.length > 0 && (
-          <>
-            <h3 className="text-center text-[28px] font-extrabold dark:text-[#FCFCFC]">
-              Similar articles
-            </h3>
-            <BlogCardList articles={similarArticles} />
-          </>
-        )}
       </>
     );
   },

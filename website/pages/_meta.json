@@ -4,11 +4,39 @@
         "layout": "raw"
       }
     },
-    "blog": {
+    "archive": {
       "type": "page",
       "theme": {
         "layout": "full",
         "timestamp": false
+      }
+    },
+    "tag": {
+      "type": "page",
+      "theme": {
+        "layout": "full",
+        "timestamp": false
+      }
+    },
+    "about": {
+      "type": "page",
+      "theme": {
+        "layout": "full",
+        "timestamp": false
+      }
+    },
+    "404": {
+      "type": "page",
+      "theme": {
+        "timestamp": false,
+        "typesetting": "article"
+      }
+    },
+    "500": {
+      "type": "page",
+      "theme": {
+        "timestamp": false,
+        "typesetting": "article"
       }
     }
   }

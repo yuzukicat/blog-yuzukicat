@@ -1,11 +1,10 @@
 ---
-title: Blog
-description: Blog site of yuzukicat.
+title: Blog - Tag
+description: Blog, Yuzukicat, Tags.
 skipSync: true
 ---
 
-import { Heading, BlogCardList, TagList } from '@/components'
-import { HeroSection } from '@/hero-section'
+import { BlogCardList, TagList } from '@/components'
 import { useSSG } from 'nextra/ssg'
 import { getAllArticles } from '../lib/get-all-articles'
 
@@ -44,9 +43,6 @@ export default function Blog() {
   const allTags = extractRelevantTags(articles)
   return (
     <>
-      <HeroSection>
-        <Heading>A Cat knows human language</Heading>
-      </HeroSection>
       <div className="container max-w-[1200px]">
         <TagList tags={allTags} withCount asLink className="mt-10 mb-20" />
         {!tagFilters}

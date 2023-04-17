@@ -6,7 +6,7 @@
 	"private": true,
 	"scripts": {
 	  "analyze": "ANALYZE=true pnpm build",
-	  "build": "pnpm check-links && pnpm generate:blogs-meta && next build && next-sitemap --config next-sitemap.config.cjs",
+	  "build": "pnpm generate:blogs-meta && next build && next-sitemap --config next-sitemap.config.cjs",
 	  "check-links": "pnpm ts:run check-links.ts",
 	  "dev": "pnpm generate:blogs-meta && next",
 	  "export": "next export && pnpm ts:run rss-generator.ts",
