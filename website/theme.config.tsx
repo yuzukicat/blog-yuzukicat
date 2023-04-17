@@ -38,6 +38,9 @@ export default defineConfig({
       />
     ),
   },
+  primaryHue:{
+    dark: 204, light: 323 
+  },
   useNextSeoProps() {
     const { frontMatter, title } = useConfig();
     const { description, authors, tags, thumbnail, date, updateDate } = frontMatter;

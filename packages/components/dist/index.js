@@ -115,7 +115,7 @@ import { jsx as jsx5, jsxs as jsxs2 } from "react/jsx-runtime";
 var FooterExtended = ({
   className
 }) => {
-  return /* @__PURE__ */ jsx5("footer", { className: clsx5("bg-white text-xs dark:bg-[#111]", className), children: /* @__PURE__ */ jsx5("div", { className: "container max-w-[90rem] border-t border-gray-300 dark:border-gray-800", children: /* @__PURE__ */ jsx5("div", { className: "my-8 flex flex-col gap-6 pt-2 pb-4 lg:flex-row items-center sm:items-start", children: /* @__PURE__ */ jsx5("div", { className: "flex w-full flex-row gap-6", children: /* @__PURE__ */ jsxs2("p", { className: "text-pink-500 dark:text-gray-200 mt-6 text-xs", children: [
+  return /* @__PURE__ */ jsx5("footer", { className: clsx5("bg-white text-xs dark:bg-[#111]", className), children: /* @__PURE__ */ jsx5("div", { className: "container max-w-[90rem] border-t border-gray-300 dark:border-gray-800", children: /* @__PURE__ */ jsx5("div", { className: "my-8 flex flex-col gap-6 pt-2 pb-4 lg:flex-row items-center sm:items-start", children: /* @__PURE__ */ jsx5("div", { className: "flex w-full flex-row gap-6", children: /* @__PURE__ */ jsxs2("p", { className: "text-[#E6008E] dark:text-gray-200 mt-6 text-xs", children: [
     "\xA9 ",
     (/* @__PURE__ */ new Date()).getFullYear(),
     " Yuzuki.Cat"
@@ -1354,14 +1354,13 @@ var Header = ({
                         p-1
                         text-base
                         hover:underline
-                        hover:text-pink-600
-                        hover:bg-pink-100
+                        hover:text-[#E97191]
                         dark:hover:text-gray-200
                         dark:hover:bg-[#111]
                         sm:text-lg
                         md:text-left
                         md:text-sm`,
-                        activeLink && link.href.includes(activeLink) ? "text-pink-800 dark:text-gray-200" : "text-pink-600 dark:text-gray-400"
+                        activeLink && link.href.includes(activeLink) ? "text-[#A30065] dark:text-gray-200" : "text-[#E6008E] dark:text-gray-400"
                       ),
                       style: { "--accentColor": accentColor },
                       sameSite,
