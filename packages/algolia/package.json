@@ -1,7 +1,7 @@
 {
   "name": "@theguild/algolia",
-  "type": "module",
   "version": "1.1.6",
+  "type": "module",
   "repository": {
     "url": "https://github.com/the-guild-org/docs",
     "directory": "packages/algolia"

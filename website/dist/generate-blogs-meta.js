@@ -11764,14 +11764,14 @@ import { writeFile } from "node:fs/promises";
 import { join as join2 } from "node:path";
 import { readFile } from "node:fs/promises";
 
-// ../node_modules/.pnpm/globby@13.1.3/node_modules/globby/index.js
+// ../node_modules/.pnpm/globby@13.1.4/node_modules/globby/index.js
 var import_merge2 = __toESM(require_merge2(), 1);
 var import_fast_glob2 = __toESM(require_out4(), 1);
 var import_dir_glob = __toESM(require_dir_glob(), 1);
 import fs2 from "node:fs";
 import nodePath from "node:path";
 
-// ../node_modules/.pnpm/globby@13.1.3/node_modules/globby/ignore.js
+// ../node_modules/.pnpm/globby@13.1.4/node_modules/globby/ignore.js
 var import_fast_glob = __toESM(require_out4(), 1);
 var import_ignore = __toESM(require_ignore(), 1);
 import process2 from "node:process";
@@ -11788,7 +11788,7 @@ function slash(path2) {
   return path2.replace(/\\/g, "/");
 }
 
-// ../node_modules/.pnpm/globby@13.1.3/node_modules/globby/utilities.js
+// ../node_modules/.pnpm/globby@13.1.4/node_modules/globby/utilities.js
 import { fileURLToPath } from "node:url";
 import { Transform } from "node:stream";
 var toPath = (urlOrPath) => urlOrPath instanceof URL ? fileURLToPath(urlOrPath) : urlOrPath;
@@ -11804,7 +11804,7 @@ var FilterStream = class extends Transform {
 };
 var isNegativePattern = (pattern) => pattern[0] === "!";
 
-// ../node_modules/.pnpm/globby@13.1.3/node_modules/globby/ignore.js
+// ../node_modules/.pnpm/globby@13.1.4/node_modules/globby/ignore.js
 var ignoreFilesGlobOptions = {
   ignore: [
     "**/node_modules",
@@ -11841,11 +11841,12 @@ var getIsIgnoredPredicate = (files, cwd) => {
   };
 };
 var normalizeOptions = (options = {}) => ({
-  cwd: toPath(options.cwd) || process2.cwd()
+  cwd: toPath(options.cwd) || process2.cwd(),
+  suppressErrors: Boolean(options.suppressErrors)
 });
 var isIgnoredByIgnoreFiles = async (patterns, options) => {
-  const { cwd } = normalizeOptions(options);
-  const paths = await (0, import_fast_glob.default)(patterns, { cwd, ...ignoreFilesGlobOptions });
+  const { cwd, suppressErrors } = normalizeOptions(options);
+  const paths = await (0, import_fast_glob.default)(patterns, { cwd, suppressErrors, ...ignoreFilesGlobOptions });
   const files = await Promise.all(
     paths.map(async (filePath) => ({
       filePath,
@@ -11855,8 +11856,8 @@ var isIgnoredByIgnoreFiles = async (patterns, options) => {
   return getIsIgnoredPredicate(files, cwd);
 };
 var isIgnoredByIgnoreFilesSync = (patterns, options) => {
-  const { cwd } = normalizeOptions(options);
-  const paths = import_fast_glob.default.sync(patterns, { cwd, ...ignoreFilesGlobOptions });
+  const { cwd, suppressErrors } = normalizeOptions(options);
+  const paths = import_fast_glob.default.sync(patterns, { cwd, suppressErrors, ...ignoreFilesGlobOptions });
   const files = paths.map((filePath) => ({
     filePath,
     content: fs.readFileSync(filePath, "utf8")
@@ -11864,7 +11865,7 @@ var isIgnoredByIgnoreFilesSync = (patterns, options) => {
   return getIsIgnoredPredicate(files, cwd);
 };
 
-// ../node_modules/.pnpm/globby@13.1.3/node_modules/globby/index.js
+// ../node_modules/.pnpm/globby@13.1.4/node_modules/globby/index.js
 var assertPatternsInput = (patterns) => {
   if (patterns.some((pattern) => typeof pattern !== "string")) {
     throw new TypeError("Patterns must be a string or an array of strings");
@@ -11912,13 +11913,13 @@ var getIgnoreFilesPatterns = (options) => {
 var getFilter = async (options) => {
   const ignoreFilesPatterns = getIgnoreFilesPatterns(options);
   return createFilterFunction(
-    ignoreFilesPatterns.length > 0 && await isIgnoredByIgnoreFiles(ignoreFilesPatterns, { cwd: options.cwd })
+    ignoreFilesPatterns.length > 0 && await isIgnoredByIgnoreFiles(ignoreFilesPatterns, options)
   );
 };
 var getFilterSync = (options) => {
   const ignoreFilesPatterns = getIgnoreFilesPatterns(options);
   return createFilterFunction(
-    ignoreFilesPatterns.length > 0 && isIgnoredByIgnoreFilesSync(ignoreFilesPatterns, { cwd: options.cwd })
+    ignoreFilesPatterns.length > 0 && isIgnoredByIgnoreFilesSync(ignoreFilesPatterns, options)
   );
 };
 var createFilterFunction = (isIgnored) => {
