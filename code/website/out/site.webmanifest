@@ -1,0 +1,11 @@
+{
+    "$schema": "https://json.schemastore.org/web-manifest-combined.json",
+    "name": "Cat, Yuzuki",
+    "short_name": "Cat, Yuzuki",
+    "start_url": ".",
+    "icons": [
+    ],
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "display": "standalone"
+  }

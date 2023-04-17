@@ -1,16 +1,14 @@
 [
   {
-    "title": "A New Year for GraphQL Schema Stitching",
-    "description": "2021 is the year to give Schema Stitching a fresh look after its recent renovation",
+    "title": "A Test Page using mdx, NextJS, SSG, Cloudflare",
+    "description": "Blog, Yuzukicat, First Page, mdx, NextJS, SSG, Blog, Cloudflare",
     "date": "2021-01-14",
     "authors": [
-      "gmac"
+      "yuzukicat"
     ],
     "tags": [
-      "graphql",
-      "graphql-tools",
-      "schema-stitching"
+      "test"
     ],
-    "link": "/blog/a-new-year-for-schema-stitching"
+    "link": "/blog/a-test-page"
   }
 ]
