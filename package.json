@@ -3,6 +3,6 @@
     "pnpm": "^8.2.0"
   },
   "scripts": {
-    "build": "pnpm -C code install && pnpm -C code/website export"
+    "build": "pnpm -C code install && pnpm -C code/website build && pnpm -C code/website export"
   }
 }
