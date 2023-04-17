@@ -10,7 +10,6 @@
     "build": "pnpm install && pnpm -C website build"
   },
   "devDependencies": {
-    "pnpm": "^8.2.0",
     "@theguild/eslint-config": "0.9.0",
     "@theguild/prettier-config": "1.1.3",
     "eslint": "8.38.0",
