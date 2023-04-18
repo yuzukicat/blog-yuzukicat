@@ -6,39 +6,37 @@ authors: yuzukicat
 tags: [Dalle-E]
 ---
 
-## Inputs and Outputs
+## What Is Generative Ai
 
-### Joel Robuchon Uni Signature Dishes
+> A generative artificial intelligence or generative AI / (GenAI) is a type of AI system capable of generating text, images, or other media in response to prompts. Generative AI systems use generative models such as large language models to produce data based on the training data set that was used to create them.
 
-```zsh
-curl -X POST -H "Content-Type: application/json" -d '{"prompt":"joel robuchon uni signature dishes"}' server
-```
+> Notable generative AI systems include ChatGPT, a chatbot built by OpenAI using the GPT-3 and GPT-4 large language models, and Bard, a chatbot built by Google using the LaMDA model. Other generative AI models include artificial intelligence art systems such as Stable Diffusion, Midjourney, and DALL-E.
 
-![joel robuchon uni signature dishes](../../public/img/joel_robuchon_uni_signature_dishes.png "joel robuchon uni signature dishes")
+> Generative AI has potential applications across a wide range of industries, including software development, marketing, and fashion. Investment in generative AI surged during the early 2020s, with large companies such as Microsoft, Google, and Baidu as well as numerous smaller firms developing generative AI models.
 
-![joel robuchon uni signature dishes](../../public/img/joel_robuchon_uni_signature_dishes_2.png  "joel robuchon uni signature dishes")
+ [Generative artificial intelligence - wikipedia](https://en.wikipedia.org/wiki/Generative_artificial_intelligence)
 
-![joel robuchon uni signature dishes](../../public/img/joel_robuchon_uni_signature_dishes_3.png  "joel robuchon uni signature dishes")
+## What We Are Going to Do
 
-### Wild Mushroom Autumn Appetizer
+We provide AI services to give ideas for the chef to create food plating.
 
-With ```season``` key word!
+## Some Test Results
 
-```zsh
-curl -X POST -H "Content-Type: application/json" -d '{"prompt":"wild mushroom autumn appetizer"}' server
-```
+### Totally Imaginary Combinations
 
-![wild mushroom autumn appetizer](../../public/img/wild_mushroom_autumn_appetizer.png  "wild mushroom autumn appetizer")
+#### Prompt with Chef Name
 
-![wild mushroom autumn appetizer](../../public/img/wild_mushroom_autumn_appetizer_2.png  "wild mushroom autumn appetizer")
+> キャビア 甲殻類のジュレになめらかなカリフラワーのクレーム by Martin Yan in Nordic plating
 
-![wild mushroom autumn appetizer](../../public/img/wild_mushroom_autumn_appetizer_3.png  "wild mushroom autumn appetizer")
+![キャビア 甲殻類のジュレになめらかなカリフラワーのクレーム by Martin Yan in Nordic plating](../../public/img/キャビア_甲殻類のジュレになめらかなカリフラワーのクレーム_by_Martin_Yan_in_Nordic_plating.png "キャビア 甲殻類のジュレになめらかなカリフラワーのクレーム by Martin Yan in Nordic plating")
 
-### Noma Scandinavian Uni Signature Dishes
+> すきやばし次郎が作るキャビア 甲殻類のジュレになめらかなカリフラワーのクレーム
 
-```zsh
-curl -X POST -H "Content-Type: application/json" -d '{"prompt":"noma scandinavian uni signature dishes"}' server
-```
+![すきやばし次郎が作るキャビア 甲殻類のジュレになめらかなカリフラワーのクレーム](../../public/img/すきやばし次郎が作るキャビア_甲殻類のジュレになめらかなカリフラワーのクレーム.png "すきやばし次郎が作るキャビア 甲殻類のジュレになめらかなカリフラワーのクレーム")
+
+#### Prompt with Style
+
+##### Noma Scandinavian Uni Signature Dishes
 
 ![noma scandinavian uni signature dishes](../../public/img/noma_scandinavian_uni_signature_dishes.png  "noma scandinavian uni signature dishes")
 
@@ -46,11 +44,9 @@ curl -X POST -H "Content-Type: application/json" -d '{"prompt":"noma scandinavia
 
 ![noma scandinavian uni signature dishes](../../public/img/noma_scandinavian_uni_signature_dishes_3.png  "noma scandinavian uni signature dishes")
 
-### Eggplant Bonito Green French Style Appetizer
+#### Prompt with Combinations
 
-```zsh
-curl -X POST -H "Content-Type: application/json" -d '{"prompt":"eggplant bonito green french style appetizer"}' server
-```
+##### Eggplant Bonito Green French Style Appetizer
 
 ![eggplant bonito green french style appetizer](../../public/img/eggplant_bonito_green_french_style_appetizer.png  "eggplant bonito green french style appetizer")
 
@@ -58,11 +54,7 @@ curl -X POST -H "Content-Type: application/json" -d '{"prompt":"eggplant bonito 
 
 ![eggplant bonito green french style appetizer](../../public/img/eggplant_bonito_green_french_style_appetizer_3.png  "eggplant bonito green french style appetizer")
 
-### Salmon Apple Ginger Yuzu Appetizer Innovative
-
-```zsh
-curl -X POST -H "Content-Type: application/json" -d '{"prompt":"salmon apple ginger yuzu appetizer innovative"}' server
-```
+##### Salmon Apple Ginger Yuzu Appetizer Innovative
 
 ![salmon apple ginger yuzu appetizer innovative](../../public/img/salmon_apple_ginger_yuzu_appetizer_innovative.png  "salmon apple ginger yuzu appetizer innovative")
 
@@ -70,9 +62,26 @@ curl -X POST -H "Content-Type: application/json" -d '{"prompt":"salmon apple gin
 
 ![salmon apple ginger yuzu appetizer innovative](../../public/img/salmon_apple_ginger_yuzu_appetizer_innovative_3.png  "salmon apple ginger yuzu appetizer innovative")
 
+### Synthetic Pic Comparison  vs Real Pic
 
-## Why Generative Ai
+#### Joel Robuchon Uni Signature Dishes
 
-It provides ideas for chef to create food plating.
+##### Generative Ai
 
-It can be used to avoid copyright issues, because images are generated by AI.
+![joel robuchon uni signature dishes](../../public/img/joel_robuchon_uni_signature_dishes_3.png  "joel robuchon uni signature dishes")
+
+##### Real
+
+![magazine_hitosara_com_article_2931](../../public/img/magazine_hitosara_com_article_2931.jpg  "magazine_hitosara_com_article_2931")
+
+#### Wild Mushroom Autumn Appetizer
+
+With ```season``` key word!
+
+##### Generative Ai
+
+![wild mushroom autumn appetizer](../../public/img/wild_mushroom_autumn_appetizer.png  "wild mushroom autumn appetizer")
+
+##### Real
+
+![Mushroom_Appetizers_Momsdish](../../public/img/Mushroom_Appetizers_Momsdish.jpg  "Mushroom_Appetizers_Momsdish")
