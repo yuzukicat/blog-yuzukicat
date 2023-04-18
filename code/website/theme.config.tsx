@@ -39,7 +39,8 @@ export default defineConfig({
     ),
   },
   primaryHue:{
-    dark: 204, light: 323 
+    // dark: 204, light: 323 
+    dark: 204, light: 208
   },
   useNextSeoProps() {
     const { frontMatter, title } = useConfig();
