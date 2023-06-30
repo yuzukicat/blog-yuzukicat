@@ -27,7 +27,7 @@
   },
   "pnpm": {
     "patchedDependencies": {
-      "nextra-theme-docs@2.3.0": "patches/nextra-theme-docs@2.3.0.patch"
+      "nextra-theme-docs@2.7.1": "patches/nextra-theme-docs@2.7.1.patch"
     }
   }
 }

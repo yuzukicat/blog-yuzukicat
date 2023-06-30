@@ -11,7 +11,7 @@ var __require = /* @__PURE__ */ ((x) => typeof require !== "undefined" ? require
 }) : x)(function(x) {
   if (typeof require !== "undefined")
     return require.apply(this, arguments);
-  throw new Error('Dynamic require of "' + x + '" is not supported');
+  throw Error('Dynamic require of "' + x + '" is not supported');
 });
 var __commonJS = (cb, mod) => function __require2() {
   return mod || (0, cb[__getOwnPropNames(cb)[0]])((mod = { exports: {} }).exports, mod), mod.exports;
@@ -11764,14 +11764,14 @@ import { writeFile } from "node:fs/promises";
 import { join as join2 } from "node:path";
 import { readFile } from "node:fs/promises";
 
-// ../node_modules/.pnpm/globby@13.1.4/node_modules/globby/index.js
+// ../node_modules/.pnpm/globby@13.2.0/node_modules/globby/index.js
 var import_merge2 = __toESM(require_merge2(), 1);
 var import_fast_glob2 = __toESM(require_out4(), 1);
 var import_dir_glob = __toESM(require_dir_glob(), 1);
 import fs2 from "node:fs";
 import nodePath from "node:path";
 
-// ../node_modules/.pnpm/globby@13.1.4/node_modules/globby/ignore.js
+// ../node_modules/.pnpm/globby@13.2.0/node_modules/globby/ignore.js
 var import_fast_glob = __toESM(require_out4(), 1);
 var import_ignore = __toESM(require_ignore(), 1);
 import process2 from "node:process";
@@ -11788,7 +11788,7 @@ function slash(path2) {
   return path2.replace(/\\/g, "/");
 }
 
-// ../node_modules/.pnpm/globby@13.1.4/node_modules/globby/utilities.js
+// ../node_modules/.pnpm/globby@13.2.0/node_modules/globby/utilities.js
 import { fileURLToPath } from "node:url";
 import { Transform } from "node:stream";
 var toPath = (urlOrPath) => urlOrPath instanceof URL ? fileURLToPath(urlOrPath) : urlOrPath;
@@ -11804,7 +11804,7 @@ var FilterStream = class extends Transform {
 };
 var isNegativePattern = (pattern) => pattern[0] === "!";
 
-// ../node_modules/.pnpm/globby@13.1.4/node_modules/globby/ignore.js
+// ../node_modules/.pnpm/globby@13.2.0/node_modules/globby/ignore.js
 var ignoreFilesGlobOptions = {
   ignore: [
     "**/node_modules",
@@ -11842,11 +11842,12 @@ var getIsIgnoredPredicate = (files, cwd) => {
 };
 var normalizeOptions = (options = {}) => ({
   cwd: toPath(options.cwd) || process2.cwd(),
-  suppressErrors: Boolean(options.suppressErrors)
+  suppressErrors: Boolean(options.suppressErrors),
+  deep: typeof options.deep === "number" ? options.deep : Number.POSITIVE_INFINITY
 });
 var isIgnoredByIgnoreFiles = async (patterns, options) => {
-  const { cwd, suppressErrors } = normalizeOptions(options);
-  const paths = await (0, import_fast_glob.default)(patterns, { cwd, suppressErrors, ...ignoreFilesGlobOptions });
+  const { cwd, suppressErrors, deep } = normalizeOptions(options);
+  const paths = await (0, import_fast_glob.default)(patterns, { cwd, suppressErrors, deep, ...ignoreFilesGlobOptions });
   const files = await Promise.all(
     paths.map(async (filePath) => ({
       filePath,
@@ -11856,8 +11857,8 @@ var isIgnoredByIgnoreFiles = async (patterns, options) => {
   return getIsIgnoredPredicate(files, cwd);
 };
 var isIgnoredByIgnoreFilesSync = (patterns, options) => {
-  const { cwd, suppressErrors } = normalizeOptions(options);
-  const paths = import_fast_glob.default.sync(patterns, { cwd, suppressErrors, ...ignoreFilesGlobOptions });
+  const { cwd, suppressErrors, deep } = normalizeOptions(options);
+  const paths = import_fast_glob.default.sync(patterns, { cwd, suppressErrors, deep, ...ignoreFilesGlobOptions });
   const files = paths.map((filePath) => ({
     filePath,
     content: fs.readFileSync(filePath, "utf8")
@@ -11865,7 +11866,7 @@ var isIgnoredByIgnoreFilesSync = (patterns, options) => {
   return getIsIgnoredPredicate(files, cwd);
 };
 
-// ../node_modules/.pnpm/globby@13.1.4/node_modules/globby/index.js
+// ../node_modules/.pnpm/globby@13.2.0/node_modules/globby/index.js
 var assertPatternsInput = (patterns) => {
   if (patterns.some((pattern) => typeof pattern !== "string")) {
     throw new TypeError("Patterns must be a string or an array of strings");
@@ -19625,7 +19626,7 @@ function defaultOnError(left, right) {
   }
 }
 
-// ../node_modules/.pnpm/remark-parse@10.0.1/node_modules/remark-parse/lib/index.js
+// ../node_modules/.pnpm/remark-parse@10.0.2/node_modules/remark-parse/lib/index.js
 function remarkParse(options) {
   const parser = (doc) => {
     const settings = (
@@ -19645,9 +19646,6 @@ function remarkParse(options) {
   };
   Object.assign(this, { Parser: parser });
 }
-
-// ../node_modules/.pnpm/remark-parse@10.0.1/node_modules/remark-parse/index.js
-var remark_parse_default = remarkParse;
 
 // lib/get-all-articles.ts
 import frontmatter from "remark-frontmatter";
@@ -21203,7 +21201,7 @@ function safeBound(value, config) {
   return safe(this, value, config);
 }
 
-// ../node_modules/.pnpm/remark-stringify@10.0.2/node_modules/remark-stringify/lib/index.js
+// ../node_modules/.pnpm/remark-stringify@10.0.3/node_modules/remark-stringify/lib/index.js
 function remarkStringify(options) {
   const compiler2 = (tree) => {
     const settings = (
@@ -21225,9 +21223,6 @@ function remarkStringify(options) {
   };
   Object.assign(this, { Compiler: compiler2 });
 }
-
-// ../node_modules/.pnpm/remark-stringify@10.0.2/node_modules/remark-stringify/index.js
-var remark_stringify_default = remarkStringify;
 
 // ../node_modules/.pnpm/acorn@8.8.2/node_modules/acorn/dist/acorn.mjs
 var astralIdentifierCodes = [509, 0, 227, 0, 150, 4, 294, 9, 1368, 2, 2, 1, 6, 3, 41, 2, 5, 0, 166, 1, 574, 3, 9, 9, 370, 1, 81, 2, 71, 10, 50, 3, 123, 2, 54, 14, 32, 10, 3, 1, 11, 3, 46, 10, 8, 0, 46, 9, 7, 2, 37, 13, 2, 9, 6, 1, 45, 0, 13, 2, 49, 13, 9, 3, 2, 11, 83, 11, 7, 0, 3, 0, 158, 11, 6, 9, 7, 3, 56, 1, 2, 6, 3, 1, 3, 2, 10, 0, 11, 1, 3, 6, 4, 4, 193, 17, 10, 9, 5, 0, 82, 19, 13, 9, 214, 6, 3, 8, 28, 1, 83, 16, 16, 9, 82, 12, 9, 9, 84, 14, 5, 9, 243, 14, 166, 9, 71, 5, 2, 1, 3, 3, 2, 0, 2, 1, 13, 9, 120, 6, 3, 6, 4, 0, 29, 9, 41, 6, 2, 3, 9, 0, 10, 10, 47, 15, 406, 7, 2, 7, 17, 9, 57, 21, 2, 13, 123, 5, 4, 0, 2, 1, 2, 6, 2, 0, 9, 9, 49, 4, 2, 1, 2, 4, 9, 9, 330, 3, 10, 1, 2, 0, 49, 6, 4, 4, 14, 9, 5351, 0, 7, 14, 13835, 9, 87, 9, 39, 4, 60, 6, 26, 9, 1014, 0, 2, 54, 8, 3, 82, 0, 12, 1, 19628, 1, 4706, 45, 3, 22, 543, 4, 4, 5, 9, 7, 3, 6, 31, 3, 149, 2, 1418, 49, 513, 54, 5, 49, 9, 0, 15, 0, 23, 4, 2, 14, 1361, 6, 2, 16, 3, 6, 2, 1, 2, 4, 101, 0, 161, 6, 10, 9, 357, 0, 62, 13, 499, 13, 983, 6, 110, 6, 6, 9, 4759, 9, 787719, 239];
@@ -28610,12 +28605,12 @@ async function getAllArticles(tagsFilter = []) {
 async function readMeta(dir, file) {
   const raw = await readFile(join2(dir, file), "utf8");
   try {
-    const processor = unified().use(remark_parse_default).use(remarkMdx).use(frontmatter).use(parseFrontmatter, {
+    const processor = unified().use(remarkParse).use(remarkMdx).use(frontmatter).use(parseFrontmatter, {
       // properties: {
       //   title: { type: 'title', required: true },
       //   tags: { type: 'tags', minItems: 1 },
       // },
-    }).use(remark_stringify_default);
+    }).use(remarkStringify);
     const vFile = await processor.process(raw);
     const parsed = vFile.data.frontmatter;
     if (parsed.title.length > 70) {
