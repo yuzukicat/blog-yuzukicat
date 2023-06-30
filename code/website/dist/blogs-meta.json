@@ -1,26 +1,59 @@
 [
   {
-    "title": "A Test Page using mdx, NextJS, SSG, Cloudflare",
+    "title": "Algorithmic Toolbox Greedy Algorithms",
+    "description": "Study Notes for Data Structures and Algorithms Specialization",
+    "date": "2023-06-30",
+    "authors": [
+      "yuzukicat"
+    ],
+    "tags": [
+      "Data Structures",
+      "Algorithms",
+      "Study Notes",
+      "University of California San Diego"
+    ],
+    "link": "/blog/algorithmic-toolbox-greedy-algorithms"
+  },
+  {
+    "title": "AZ-204 Professional Certificate Study Notes",
+    "description": "Microsoft, Azure, Associate, AZ-204, Certificate, Study Notes",
+    "date": "2023-06-30",
+    "authors": [
+      "yuzukicat"
+    ],
+    "tags": [
+      "Microsoft",
+      "Azure",
+      "Associate",
+      "AZ-204",
+      "Certificate",
+      "Study Notes"
+    ],
+    "link": "/blog/az-204-professional-certificate-study-notes"
+  },
+  {
+    "title": "Generative AI in Food plating",
+    "description": "Dalle, Generative AI, AGI, Food plating, Chef, Copyright",
+    "date": "2021-01-14",
+    "authors": [
+      "yuzukicat"
+    ],
+    "tags": [
+      "AGI",
+      "Dalle"
+    ],
+    "link": "/blog/generative-ai-in-food-plating"
+  },
+  {
+    "title": "Test Page using mdx NextJS SSG Cloudflare",
     "description": "Blog, Yuzukicat, First Page, mdx, NextJS, SSG, Blog, Cloudflare",
     "date": "2021-01-14",
     "authors": [
       "yuzukicat"
     ],
     "tags": [
-      "test"
+      "Test"
     ],
-    "link": "/blog/a-test-page"
-  },
-  {
-    "title": "What Role can generative AI play in food plating",
-    "description": "Dalle-E, generative AI, food plating, chef, NextJS",
-    "date": "2021-01-14",
-    "authors": [
-      "yuzukicat"
-    ],
-    "tags": [
-      "Dalle-E"
-    ],
-    "link": "/blog/dalle-e-food-plating"
+    "link": "/blog/test-page-using-nextjs-ssg-cloudflare"
   }
 ]
