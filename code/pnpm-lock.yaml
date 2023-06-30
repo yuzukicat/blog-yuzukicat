@@ -62,11 +62,11 @@ importers:
   packages/algolia:
     dependencies:
       algoliasearch:
-        specifier: ^4.14.3
-        version: 4.16.0
+        specifier: ^4.18.0
+        version: 4.18.0
       commander:
-        specifier: ^10.0.0
-        version: 10.0.1
+        specifier: ^11.0.0
+        version: 11.0.0
       fast-glob:
         specifier: ^3.2.12
         version: 3.2.12
@@ -100,13 +100,13 @@ importers:
     dependencies:
       '@algolia/autocomplete-js':
         specifier: 1.8.3
-        version: 1.8.3(@algolia/client-search@4.16.0)(algoliasearch@4.16.0)
+        version: 1.8.3(@algolia/client-search@4.18.0)(algoliasearch@4.16.0)
       '@algolia/autocomplete-plugin-algolia-insights':
         specifier: 1.8.3
-        version: 1.8.3(@algolia/client-search@4.16.0)(algoliasearch@4.16.0)(search-insights@2.4.0)
+        version: 1.8.3(@algolia/client-search@4.18.0)(algoliasearch@4.16.0)(search-insights@2.4.0)
       '@algolia/autocomplete-plugin-query-suggestions':
         specifier: 1.8.3
-        version: 1.8.3(@algolia/client-search@4.16.0)(algoliasearch@4.16.0)
+        version: 1.8.3(@algolia/client-search@4.18.0)(algoliasearch@4.16.0)
       '@algolia/autocomplete-theme-classic':
         specifier: 1.8.3
         version: 1.8.3
@@ -202,20 +202,20 @@ importers:
         specifier: ^3.5.3
         version: 3.5.3
       unified:
-        specifier: ^10.0.0
+        specifier: ^10.1.2
         version: 10.1.2
       unified-lint-rule:
-        specifier: ^2.0.0
-        version: 2.1.1
+        specifier: ^2.1.2
+        version: 2.1.2
       unist-util-generated:
-        specifier: ^2.0.0
+        specifier: ^2.0.1
         version: 2.0.1
       unist-util-visit:
-        specifier: ^4.0.0
+        specifier: ^4.1.2
         version: 4.1.2
     devDependencies:
       '@types/mdast':
-        specifier: ^3.0.0
+        specifier: ^3.0.11
         version: 3.0.11
 
   packages/remark-lint-no-dot-at-end-of-heading:
@@ -224,20 +224,20 @@ importers:
         specifier: ^2.0.0
         version: 2.0.0
       unified:
-        specifier: ^10.0.0
+        specifier: ^10.1.2
         version: 10.1.2
       unified-lint-rule:
-        specifier: ^2.0.0
-        version: 2.1.1
+        specifier: ^2.1.2
+        version: 2.1.2
       unist-util-generated:
-        specifier: ^2.0.0
+        specifier: ^2.0.1
         version: 2.0.1
       unist-util-visit:
-        specifier: ^4.0.0
+        specifier: ^4.1.2
         version: 4.1.2
     devDependencies:
       '@types/mdast':
-        specifier: ^3.0.0
+        specifier: ^3.0.11
         version: 3.0.11
 
   packages/remark-lint-no-full-bold-heading:
@@ -246,20 +246,20 @@ importers:
         specifier: ^2.0.0
         version: 2.0.0
       unified:
-        specifier: ^10.0.0
+        specifier: ^10.1.2
         version: 10.1.2
       unified-lint-rule:
-        specifier: ^2.0.0
-        version: 2.1.1
+        specifier: ^2.1.2
+        version: 2.1.2
       unist-util-generated:
-        specifier: ^2.0.0
+        specifier: ^2.0.1
         version: 2.0.1
       unist-util-visit:
-        specifier: ^4.0.0
+        specifier: ^4.1.2
         version: 4.1.2
     devDependencies:
       '@types/mdast':
-        specifier: ^3.0.0
+        specifier: ^3.0.11
         version: 3.0.11
 
   website:
@@ -367,27 +367,27 @@ packages:
       '@algolia/autocomplete-shared': 1.8.3
     dev: false
 
-  /@algolia/autocomplete-js@1.8.3(@algolia/client-search@4.16.0)(algoliasearch@4.16.0):
+  /@algolia/autocomplete-js@1.8.3(@algolia/client-search@4.18.0)(algoliasearch@4.16.0):
     resolution: {integrity: sha512-h5v/qp8CwmCUOCaNkUa+vaybnIpIoJGEfwE2Ks/84KAqIHYCBgcylwn92PkIL3gbQCok2sc6JoSIlUo0eAgPsQ==}
     peerDependencies:
       '@algolia/client-search': '>= 4.5.1 < 6'
       algoliasearch: '>= 4.9.1 < 6'
     dependencies:
       '@algolia/autocomplete-core': 1.8.3
-      '@algolia/autocomplete-preset-algolia': 1.8.3(@algolia/client-search@4.16.0)(algoliasearch@4.16.0)
+      '@algolia/autocomplete-preset-algolia': 1.8.3(@algolia/client-search@4.18.0)(algoliasearch@4.16.0)
       '@algolia/autocomplete-shared': 1.8.3
-      '@algolia/client-search': 4.16.0
+      '@algolia/client-search': 4.18.0
       algoliasearch: 4.16.0
       htm: 3.1.1
       preact: 10.13.2
     dev: false
 
-  /@algolia/autocomplete-plugin-algolia-insights@1.8.3(@algolia/client-search@4.16.0)(algoliasearch@4.16.0)(search-insights@2.4.0):
+  /@algolia/autocomplete-plugin-algolia-insights@1.8.3(@algolia/client-search@4.18.0)(algoliasearch@4.16.0)(search-insights@2.4.0):
     resolution: {integrity: sha512-JmPfWXBHMfdBp0cNB3hBIlDgy3pKGWtQz6dhd+01x9UKqmrXJQlA33zTQ/JRlAhyx2CMFbfm4zT3CPNJxfo2pg==}
     peerDependencies:
       search-insights: '>= 1 < 3'
     dependencies:
-      '@algolia/autocomplete-js': 1.8.3(@algolia/client-search@4.16.0)(algoliasearch@4.16.0)
+      '@algolia/autocomplete-js': 1.8.3(@algolia/client-search@4.18.0)(algoliasearch@4.16.0)
       '@algolia/autocomplete-shared': 1.8.3
       search-insights: 2.4.0
     transitivePeerDependencies:
@@ -395,28 +395,28 @@ packages:
       - algoliasearch
     dev: false
 
-  /@algolia/autocomplete-plugin-query-suggestions@1.8.3(@algolia/client-search@4.16.0)(algoliasearch@4.16.0):
+  /@algolia/autocomplete-plugin-query-suggestions@1.8.3(@algolia/client-search@4.18.0)(algoliasearch@4.16.0):
     resolution: {integrity: sha512-a309PAFgSRkip2McMEL0qOx9vuYB2TI4axbWqrHOSm96le10oAeLeRt9WrgSLtuMz9dbWBKS/yAAPUioLLwq/Q==}
     peerDependencies:
       '@algolia/client-search': '>= 4.5.1 < 6'
       algoliasearch: '>= 4.5.1 < 6'
     dependencies:
       '@algolia/autocomplete-core': 1.8.3
-      '@algolia/autocomplete-js': 1.8.3(@algolia/client-search@4.16.0)(algoliasearch@4.16.0)
-      '@algolia/autocomplete-preset-algolia': 1.8.3(@algolia/client-search@4.16.0)(algoliasearch@4.16.0)
+      '@algolia/autocomplete-js': 1.8.3(@algolia/client-search@4.18.0)(algoliasearch@4.16.0)
+      '@algolia/autocomplete-preset-algolia': 1.8.3(@algolia/client-search@4.18.0)(algoliasearch@4.16.0)
       '@algolia/autocomplete-shared': 1.8.3
-      '@algolia/client-search': 4.16.0
+      '@algolia/client-search': 4.18.0
       algoliasearch: 4.16.0
     dev: false
 
-  /@algolia/autocomplete-preset-algolia@1.8.3(@algolia/client-search@4.16.0)(algoliasearch@4.16.0):
+  /@algolia/autocomplete-preset-algolia@1.8.3(@algolia/client-search@4.18.0)(algoliasearch@4.16.0):
     resolution: {integrity: sha512-M5B9VZtMtBFS8KSIzv8m0gtwVYtFBBjCvr8boBi+orbQUqzdoj5f70CqhQxUtnNcFGizHUaShUDV571F33/m7g==}
     peerDependencies:
       '@algolia/client-search': '>= 4.9.1 < 6'
       algoliasearch: '>= 4.9.1 < 6'
     dependencies:
       '@algolia/autocomplete-shared': 1.8.3
-      '@algolia/client-search': 4.16.0
+      '@algolia/client-search': 4.18.0
       algoliasearch: 4.16.0
     dev: false
 
@@ -434,8 +434,18 @@ packages:
       '@algolia/cache-common': 4.16.0
     dev: false
 
+  /@algolia/cache-browser-local-storage@4.18.0:
+    resolution: {integrity: sha512-rUAs49NLlO8LVLgGzM4cLkw8NJLKguQLgvFmBEe3DyzlinoqxzQMHfKZs6TSq4LZfw/z8qHvRo8NcTAAUJQLcw==}
+    dependencies:
+      '@algolia/cache-common': 4.18.0
+    dev: false
+
   /@algolia/cache-common@4.16.0:
     resolution: {integrity: sha512-4iHjkSYQYw46pITrNQgXXhvUmcekI8INz1m+SzmqLX8jexSSy4Ky4zfGhZzhhhLHXUP3+x/PK/c0qPjxEvRwKQ==}
+    dev: false
+
+  /@algolia/cache-common@4.18.0:
+    resolution: {integrity: sha512-BmxsicMR4doGbeEXQu8yqiGmiyvpNvejYJtQ7rvzttEAMxOPoWEHrWyzBQw4x7LrBY9pMrgv4ZlUaF8PGzewHg==}
     dev: false
 
   /@algolia/cache-in-memory@4.16.0:
@@ -444,12 +454,26 @@ packages:
       '@algolia/cache-common': 4.16.0
     dev: false
 
+  /@algolia/cache-in-memory@4.18.0:
+    resolution: {integrity: sha512-evD4dA1nd5HbFdufBxLqlJoob7E2ozlqJZuV3YlirNx5Na4q1LckIuzjNYZs2ddLzuTc/Xd5O3Ibf7OwPskHxw==}
+    dependencies:
+      '@algolia/cache-common': 4.18.0
+    dev: false
+
   /@algolia/client-account@4.16.0:
     resolution: {integrity: sha512-eydcfpdIyuWoKgUSz5iZ/L0wE/Wl7958kACkvTHLDNXvK/b8Z1zypoJavh6/km1ZNQmFpeYS2jrmq0kUSFn02w==}
     dependencies:
       '@algolia/client-common': 4.16.0
       '@algolia/client-search': 4.16.0
       '@algolia/transporter': 4.16.0
+    dev: false
+
+  /@algolia/client-account@4.18.0:
+    resolution: {integrity: sha512-XsDnlROr3+Z1yjxBJjUMfMazi1V155kVdte6496atvBgOEtwCzTs3A+qdhfsAnGUvaYfBrBkL0ThnhMIBCGcew==}
+    dependencies:
+      '@algolia/client-common': 4.18.0
+      '@algolia/client-search': 4.18.0
+      '@algolia/transporter': 4.18.0
     dev: false
 
   /@algolia/client-analytics@4.16.0:
@@ -461,11 +485,27 @@ packages:
       '@algolia/transporter': 4.16.0
     dev: false
 
+  /@algolia/client-analytics@4.18.0:
+    resolution: {integrity: sha512-chEUSN4ReqU7uRQ1C8kDm0EiPE+eJeAXiWcBwLhEynfNuTfawN9P93rSZktj7gmExz0C8XmkbBU19IQ05wCNrQ==}
+    dependencies:
+      '@algolia/client-common': 4.18.0
+      '@algolia/client-search': 4.18.0
+      '@algolia/requester-common': 4.18.0
+      '@algolia/transporter': 4.18.0
+    dev: false
+
   /@algolia/client-common@4.16.0:
     resolution: {integrity: sha512-QVdR4019ukBH6f5lFr27W60trRxQF1SfS1qo0IP6gjsKhXhUVJuHxOCA6ArF87jrNkeuHEoRoDU+GlvaecNo8g==}
     dependencies:
       '@algolia/requester-common': 4.16.0
       '@algolia/transporter': 4.16.0
+    dev: false
+
+  /@algolia/client-common@4.18.0:
+    resolution: {integrity: sha512-7N+soJFP4wn8tjTr3MSUT/U+4xVXbz4jmeRfWfVAzdAbxLAQbHa0o/POSdTvQ8/02DjCLelloZ1bb4ZFVKg7Wg==}
+    dependencies:
+      '@algolia/requester-common': 4.18.0
+      '@algolia/transporter': 4.18.0
     dev: false
 
   /@algolia/client-personalization@4.16.0:
@@ -476,12 +516,28 @@ packages:
       '@algolia/transporter': 4.16.0
     dev: false
 
+  /@algolia/client-personalization@4.18.0:
+    resolution: {integrity: sha512-+PeCjODbxtamHcPl+couXMeHEefpUpr7IHftj4Y4Nia1hj8gGq4VlIcqhToAw8YjLeCTfOR7r7xtj3pJcYdP8A==}
+    dependencies:
+      '@algolia/client-common': 4.18.0
+      '@algolia/requester-common': 4.18.0
+      '@algolia/transporter': 4.18.0
+    dev: false
+
   /@algolia/client-search@4.16.0:
     resolution: {integrity: sha512-xsfrAE1jO/JDh1wFrRz+alVyW+aA6qnkzmbWWWZWEgVF3EaFqzIf9r1l/aDtDdBtNTNhX9H3Lg31+BRtd5izQA==}
     dependencies:
       '@algolia/client-common': 4.16.0
       '@algolia/requester-common': 4.16.0
       '@algolia/transporter': 4.16.0
+    dev: false
+
+  /@algolia/client-search@4.18.0:
+    resolution: {integrity: sha512-F9xzQXTjm6UuZtnsLIew6KSraXQ0AzS/Ee+OD+mQbtcA/K1sg89tqb8TkwjtiYZ0oij13u3EapB3gPZwm+1Y6g==}
+    dependencies:
+      '@algolia/client-common': 4.18.0
+      '@algolia/requester-common': 4.18.0
+      '@algolia/transporter': 4.18.0
     dev: false
 
   /@algolia/events@4.0.1:
@@ -492,10 +548,20 @@ packages:
     resolution: {integrity: sha512-U9H8uCzSDuePJmbnjjTX21aPDRU6x74Tdq3dJmdYu2+pISx02UeBJm4kSgc9RW5jcR5j35G9gnjHY9Q3ngWbyQ==}
     dev: false
 
+  /@algolia/logger-common@4.18.0:
+    resolution: {integrity: sha512-46etYgSlkoKepkMSyaoriSn2JDgcrpc/nkOgou/lm0y17GuMl9oYZxwKKTSviLKI5Irk9nSKGwnBTQYwXOYdRg==}
+    dev: false
+
   /@algolia/logger-console@4.16.0:
     resolution: {integrity: sha512-+qymusiM+lPZKrkf0tDjCQA158eEJO2IU+Nr/sJ9TFyI/xkFPjNPzw/Qbc8Iy/xcOXGlc6eMgmyjtVQqAWq6UA==}
     dependencies:
       '@algolia/logger-common': 4.16.0
+    dev: false
+
+  /@algolia/logger-console@4.18.0:
+    resolution: {integrity: sha512-3P3VUYMl9CyJbi/UU1uUNlf6Z8N2ltW3Oqhq/nR7vH0CjWv32YROq3iGWGxB2xt3aXobdUPXs6P0tHSKRmNA6g==}
+    dependencies:
+      '@algolia/logger-common': 4.18.0
     dev: false
 
   /@algolia/requester-browser-xhr@4.16.0:
@@ -504,8 +570,18 @@ packages:
       '@algolia/requester-common': 4.16.0
     dev: false
 
+  /@algolia/requester-browser-xhr@4.18.0:
+    resolution: {integrity: sha512-/AcWHOBub2U4TE/bPi4Gz1XfuLK6/7dj4HJG+Z2SfQoS1RjNLshZclU3OoKIkFp8D2NC7+BNsPvr9cPLyW8nyQ==}
+    dependencies:
+      '@algolia/requester-common': 4.18.0
+    dev: false
+
   /@algolia/requester-common@4.16.0:
     resolution: {integrity: sha512-3Zmcs/iMubcm4zqZ3vZG6Zum8t+hMWxGMzo0/uY2BD8o9q5vMxIYI0c4ocdgQjkXcix189WtZNkgjSOBzSbkdw==}
+    dev: false
+
+  /@algolia/requester-common@4.18.0:
+    resolution: {integrity: sha512-xlT8R1qYNRBCi1IYLsx7uhftzdfsLPDGudeQs+xvYB4sQ3ya7+ppolB/8m/a4F2gCkEO6oxpp5AGemM7kD27jA==}
     dev: false
 
   /@algolia/requester-node-http@4.16.0:
@@ -514,12 +590,26 @@ packages:
       '@algolia/requester-common': 4.16.0
     dev: false
 
+  /@algolia/requester-node-http@4.18.0:
+    resolution: {integrity: sha512-TGfwj9aeTVgOUhn5XrqBhwUhUUDnGIKlI0kCBMdR58XfXcfdwomka+CPIgThRbfYw04oQr31A6/95ZH2QVJ9UQ==}
+    dependencies:
+      '@algolia/requester-common': 4.18.0
+    dev: false
+
   /@algolia/transporter@4.16.0:
     resolution: {integrity: sha512-H9BVB2EAjT65w7XGBNf5drpsW39x2aSZ942j4boSAAJPPlLmjtj5IpAP7UAtsV8g9Beslonh0bLa1XGmE/P0BA==}
     dependencies:
       '@algolia/cache-common': 4.16.0
       '@algolia/logger-common': 4.16.0
       '@algolia/requester-common': 4.16.0
+    dev: false
+
+  /@algolia/transporter@4.18.0:
+    resolution: {integrity: sha512-xbw3YRUGtXQNG1geYFEDDuFLZt4Z8YNKbamHPkzr3rWc6qp4/BqEeXcI2u/P/oMq2yxtXgMxrCxOPA8lyIe5jw==}
+    dependencies:
+      '@algolia/cache-common': 4.18.0
+      '@algolia/logger-common': 4.18.0
+      '@algolia/requester-common': 4.18.0
     dev: false
 
   /@ampproject/remapping@2.2.1:
@@ -2422,6 +2512,25 @@ packages:
       '@algolia/transporter': 4.16.0
     dev: false
 
+  /algoliasearch@4.18.0:
+    resolution: {integrity: sha512-pCuVxC1SVcpc08ENH32T4sLKSyzoU7TkRIDBMwSLfIiW+fq4znOmWDkAygHZ6pRcO9I1UJdqlfgnV7TRj+MXrA==}
+    dependencies:
+      '@algolia/cache-browser-local-storage': 4.18.0
+      '@algolia/cache-common': 4.18.0
+      '@algolia/cache-in-memory': 4.18.0
+      '@algolia/client-account': 4.18.0
+      '@algolia/client-analytics': 4.18.0
+      '@algolia/client-common': 4.18.0
+      '@algolia/client-personalization': 4.18.0
+      '@algolia/client-search': 4.18.0
+      '@algolia/logger-common': 4.18.0
+      '@algolia/logger-console': 4.18.0
+      '@algolia/requester-browser-xhr': 4.18.0
+      '@algolia/requester-common': 4.18.0
+      '@algolia/requester-node-http': 4.18.0
+      '@algolia/transporter': 4.18.0
+    dev: false
+
   /ansi-regex@5.0.1:
     resolution: {integrity: sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ==}
     engines: {node: '>=8'}
@@ -3123,9 +3232,9 @@ packages:
     resolution: {integrity: sha512-Fu4hJdvzeylCfQPp9SGWidpzrMs7tTrlu6Vb8XGaRGck8QSNZJJp538Wrb60Lax4fPwR64ViY468OIUTbRlGZg==}
     dev: false
 
-  /commander@10.0.1:
-    resolution: {integrity: sha512-y4Mg2tXshplEbSGzx7amzPwKKOCGuoSRP/CjEdwwk0FOGlUbq6lKuoyDZTNZkmxHdJtp54hdfY/JUrdL7Xfdug==}
-    engines: {node: '>=14'}
+  /commander@11.0.0:
+    resolution: {integrity: sha512-9HMlXtt/BNoYr8ooyjjNRdIilOTkVJXB+GhxMTtOKwk0R4j4lS4NpjuqmRxroBfnfTSHQIHQB7wryHhXarNjmQ==}
+    engines: {node: '>=16'}
     dev: false
 
   /commander@2.20.3:
@@ -8602,7 +8711,7 @@ packages:
       '@types/mdast': 3.0.11
       pluralize: 8.0.0
       unified: 10.1.2
-      unified-lint-rule: 2.1.1
+      unified-lint-rule: 2.1.2
       unist-util-generated: 2.0.1
       unist-util-position: 4.0.4
       unist-util-visit: 4.1.2
@@ -8613,7 +8722,7 @@ packages:
     dependencies:
       '@types/mdast': 3.0.11
       unified: 10.1.2
-      unified-lint-rule: 2.1.1
+      unified-lint-rule: 2.1.2
       unist-util-position: 4.0.4
       unist-util-visit: 4.1.2
     dev: true
@@ -8623,7 +8732,7 @@ packages:
     dependencies:
       '@types/mdast': 3.0.11
       unified: 10.1.2
-      unified-lint-rule: 2.1.1
+      unified-lint-rule: 2.1.2
       unist-util-generated: 2.0.1
       unist-util-position: 4.0.4
       unist-util-visit: 4.1.2
@@ -8634,7 +8743,7 @@ packages:
     dependencies:
       '@types/mdast': 3.0.11
       unified: 10.1.2
-      unified-lint-rule: 2.1.1
+      unified-lint-rule: 2.1.2
       unist-util-position: 4.0.4
       unist-util-visit: 4.1.2
     dev: true
@@ -8644,7 +8753,7 @@ packages:
     dependencies:
       '@types/mdast': 3.0.11
       unified: 10.1.2
-      unified-lint-rule: 2.1.1
+      unified-lint-rule: 2.1.2
       unist-util-position: 4.0.4
       unist-util-visit: 4.1.2
     dev: true
@@ -8654,7 +8763,7 @@ packages:
     dependencies:
       '@types/mdast': 3.0.11
       unified: 10.1.2
-      unified-lint-rule: 2.1.1
+      unified-lint-rule: 2.1.2
       unist-util-position: 4.0.4
       unist-util-visit: 4.1.2
     dev: true
@@ -8664,7 +8773,7 @@ packages:
     dependencies:
       '@types/mdast': 3.0.11
       unified: 10.1.2
-      unified-lint-rule: 2.1.1
+      unified-lint-rule: 2.1.2
       unist-util-generated: 2.0.1
       unist-util-position: 4.0.4
       unist-util-visit: 4.1.2
@@ -8675,7 +8784,7 @@ packages:
     dependencies:
       '@types/mdast': 3.0.11
       unified: 10.1.2
-      unified-lint-rule: 2.1.1
+      unified-lint-rule: 2.1.2
       unist-util-position: 4.0.4
       unist-util-visit: 4.1.2
     dev: true
@@ -8685,7 +8794,7 @@ packages:
     dependencies:
       '@types/mdast': 3.0.11
       unified: 10.1.2
-      unified-lint-rule: 2.1.1
+      unified-lint-rule: 2.1.2
     dev: true
 
   /remark-lint-final-definition@3.1.1:
@@ -8693,7 +8802,7 @@ packages:
     dependencies:
       '@types/mdast': 3.0.11
       unified: 10.1.2
-      unified-lint-rule: 2.1.1
+      unified-lint-rule: 2.1.2
       unist-util-generated: 2.0.1
       unist-util-position: 4.0.4
       unist-util-visit: 4.1.2
@@ -8704,7 +8813,7 @@ packages:
     dependencies:
       '@types/mdast': 3.0.11
       unified: 10.1.2
-      unified-lint-rule: 2.1.1
+      unified-lint-rule: 2.1.2
     dev: true
 
   /remark-lint-hard-break-spaces@3.1.1:
@@ -8712,7 +8821,7 @@ packages:
     dependencies:
       '@types/mdast': 3.0.11
       unified: 10.1.2
-      unified-lint-rule: 2.1.1
+      unified-lint-rule: 2.1.2
       unist-util-generated: 2.0.1
       unist-util-position: 4.0.4
       unist-util-visit: 4.1.2
@@ -8723,7 +8832,7 @@ packages:
     dependencies:
       '@types/mdast': 3.0.11
       unified: 10.1.2
-      unified-lint-rule: 2.1.1
+      unified-lint-rule: 2.1.2
       unist-util-generated: 2.0.1
       unist-util-visit: 4.1.2
     dev: true
@@ -8734,7 +8843,7 @@ packages:
       '@types/mdast': 3.0.11
       mdast-util-heading-style: 2.0.1
       unified: 10.1.2
-      unified-lint-rule: 2.1.1
+      unified-lint-rule: 2.1.2
       unist-util-generated: 2.0.1
       unist-util-visit: 4.1.2
     dev: true
@@ -8744,7 +8853,7 @@ packages:
     dependencies:
       '@types/mdast': 3.0.11
       unified: 10.1.2
-      unified-lint-rule: 2.1.1
+      unified-lint-rule: 2.1.2
       unist-util-position: 4.0.4
       unist-util-visit: 4.1.2
       vfile-location: 4.1.0
@@ -8756,7 +8865,7 @@ packages:
       '@types/mdast': 3.0.11
       pluralize: 8.0.0
       unified: 10.1.2
-      unified-lint-rule: 2.1.1
+      unified-lint-rule: 2.1.2
       unist-util-visit: 4.1.2
     dev: true
 
@@ -8766,7 +8875,7 @@ packages:
       '@types/mdast': 3.0.11
       pluralize: 8.0.0
       unified: 10.1.2
-      unified-lint-rule: 2.1.1
+      unified-lint-rule: 2.1.2
       unist-util-position: 4.0.4
       unist-util-visit: 4.1.2
     dev: true
@@ -8777,7 +8886,7 @@ packages:
       '@types/mdast': 3.0.11
       pluralize: 8.0.0
       unified: 10.1.2
-      unified-lint-rule: 2.1.1
+      unified-lint-rule: 2.1.2
       unist-util-generated: 2.0.1
       unist-util-position: 4.0.4
       unist-util-visit: 4.1.2
@@ -8788,7 +8897,7 @@ packages:
     dependencies:
       '@types/mdast': 3.0.11
       unified: 10.1.2
-      unified-lint-rule: 2.1.1
+      unified-lint-rule: 2.1.2
       unist-util-generated: 2.0.1
       unist-util-position: 4.0.4
       unist-util-visit: 4.1.2
@@ -8800,7 +8909,7 @@ packages:
       '@types/mdast': 3.0.11
       mdast-util-to-string: 3.2.0
       unified: 10.1.2
-      unified-lint-rule: 2.1.1
+      unified-lint-rule: 2.1.2
       unist-util-generated: 2.0.1
       unist-util-visit: 4.1.2
     dev: true
@@ -8810,7 +8919,7 @@ packages:
     dependencies:
       '@types/mdast': 3.0.11
       unified: 10.1.2
-      unified-lint-rule: 2.1.1
+      unified-lint-rule: 2.1.2
       unist-util-generated: 2.0.1
       unist-util-position: 4.0.4
       unist-util-visit: 4.1.2
@@ -8821,7 +8930,7 @@ packages:
     dependencies:
       '@types/mdast': 3.0.11
       unified: 10.1.2
-      unified-lint-rule: 2.1.1
+      unified-lint-rule: 2.1.2
       unist-util-generated: 2.0.1
       unist-util-position: 4.0.4
       unist-util-visit: 4.1.2
@@ -8835,7 +8944,7 @@ packages:
       '@types/unist': 2.0.6
       pluralize: 8.0.0
       unified: 10.1.2
-      unified-lint-rule: 2.1.1
+      unified-lint-rule: 2.1.2
       unist-util-generated: 2.0.1
       unist-util-position: 4.0.4
       unist-util-visit: 4.1.2
@@ -8846,7 +8955,7 @@ packages:
     dependencies:
       '@types/mdast': 3.0.11
       unified: 10.1.2
-      unified-lint-rule: 2.1.1
+      unified-lint-rule: 2.1.2
       unist-util-generated: 2.0.1
       unist-util-position: 4.0.4
       unist-util-stringify-position: 3.0.3
@@ -8859,7 +8968,7 @@ packages:
       '@types/mdast': 3.0.11
       mdast-util-to-string: 3.2.0
       unified: 10.1.2
-      unified-lint-rule: 2.1.1
+      unified-lint-rule: 2.1.2
       unist-util-generated: 2.0.1
       unist-util-position: 4.0.4
       unist-util-stringify-position: 3.0.3
@@ -8871,7 +8980,7 @@ packages:
     dependencies:
       '@types/mdast': 3.0.11
       unified: 10.1.2
-      unified-lint-rule: 2.1.1
+      unified-lint-rule: 2.1.2
       unist-util-generated: 2.0.1
       unist-util-visit: 4.1.2
     dev: true
@@ -8881,7 +8990,7 @@ packages:
     dependencies:
       '@types/mdast': 3.0.11
       unified: 10.1.2
-      unified-lint-rule: 2.1.1
+      unified-lint-rule: 2.1.2
     dev: true
 
   /remark-lint-no-file-name-consecutive-dashes@2.1.1:
@@ -8889,7 +8998,7 @@ packages:
     dependencies:
       '@types/mdast': 3.0.11
       unified: 10.1.2
-      unified-lint-rule: 2.1.1
+      unified-lint-rule: 2.1.2
     dev: true
 
   /remark-lint-no-file-name-irregular-characters@2.1.1:
@@ -8897,7 +9006,7 @@ packages:
     dependencies:
       '@types/mdast': 3.0.11
       unified: 10.1.2
-      unified-lint-rule: 2.1.1
+      unified-lint-rule: 2.1.2
     dev: true
 
   /remark-lint-no-file-name-mixed-case@2.1.1:
@@ -8905,7 +9014,7 @@ packages:
     dependencies:
       '@types/mdast': 3.0.11
       unified: 10.1.2
-      unified-lint-rule: 2.1.1
+      unified-lint-rule: 2.1.2
     dev: true
 
   /remark-lint-no-file-name-outer-dashes@2.1.1:
@@ -8913,7 +9022,7 @@ packages:
     dependencies:
       '@types/mdast': 3.0.11
       unified: 10.1.2
-      unified-lint-rule: 2.1.1
+      unified-lint-rule: 2.1.2
     dev: true
 
   /remark-lint-no-heading-content-indent@4.1.1:
@@ -8923,7 +9032,7 @@ packages:
       mdast-util-heading-style: 2.0.1
       pluralize: 8.0.0
       unified: 10.1.2
-      unified-lint-rule: 2.1.1
+      unified-lint-rule: 2.1.2
       unist-util-generated: 2.0.1
       unist-util-position: 4.0.4
       unist-util-visit: 4.1.2
@@ -8935,7 +9044,7 @@ packages:
       '@types/mdast': 3.0.11
       mdast-util-to-string: 3.2.0
       unified: 10.1.2
-      unified-lint-rule: 2.1.1
+      unified-lint-rule: 2.1.2
       unist-util-generated: 2.0.1
       unist-util-visit: 4.1.2
     dev: true
@@ -8946,7 +9055,7 @@ packages:
       '@types/mdast': 3.0.11
       mdast-util-to-string: 3.2.0
       unified: 10.1.2
-      unified-lint-rule: 2.1.1
+      unified-lint-rule: 2.1.2
       unist-util-generated: 2.0.1
       unist-util-visit: 4.1.2
     dev: true
@@ -8957,7 +9066,7 @@ packages:
       '@types/mdast': 3.0.11
       mdast-util-to-string: 3.2.0
       unified: 10.1.2
-      unified-lint-rule: 2.1.1
+      unified-lint-rule: 2.1.2
       unist-util-generated: 2.0.1
       unist-util-position: 4.0.4
       unist-util-visit: 4.1.2
@@ -8968,7 +9077,7 @@ packages:
     dependencies:
       '@types/mdast': 3.0.11
       unified: 10.1.2
-      unified-lint-rule: 2.1.1
+      unified-lint-rule: 2.1.2
       unist-util-generated: 2.0.1
       unist-util-position: 4.0.4
       unist-util-stringify-position: 3.0.3
@@ -8980,7 +9089,7 @@ packages:
     dependencies:
       '@types/mdast': 3.0.11
       unified: 10.1.2
-      unified-lint-rule: 2.1.1
+      unified-lint-rule: 2.1.2
       unist-util-generated: 2.0.1
       unist-util-visit: 4.1.2
     dev: true
@@ -8990,7 +9099,7 @@ packages:
     dependencies:
       '@types/mdast': 3.0.11
       unified: 10.1.2
-      unified-lint-rule: 2.1.1
+      unified-lint-rule: 2.1.2
       unist-util-generated: 2.0.1
       unist-util-visit: 4.1.2
     dev: true
@@ -9000,7 +9109,7 @@ packages:
     dependencies:
       '@types/mdast': 3.0.11
       unified: 10.1.2
-      unified-lint-rule: 2.1.1
+      unified-lint-rule: 2.1.2
       unist-util-generated: 2.0.1
       unist-util-visit: 4.1.2
     dev: true
@@ -9010,7 +9119,7 @@ packages:
     dependencies:
       '@types/mdast': 3.0.11
       unified: 10.1.2
-      unified-lint-rule: 2.1.1
+      unified-lint-rule: 2.1.2
       unist-util-position: 4.0.4
       unist-util-visit: 4.1.2
       vfile-location: 4.1.0
@@ -9022,7 +9131,7 @@ packages:
       '@types/mdast': 3.0.11
       micromark-util-normalize-identifier: 1.0.0
       unified: 10.1.2
-      unified-lint-rule: 2.1.1
+      unified-lint-rule: 2.1.2
       unist-util-generated: 2.0.1
       unist-util-position: 4.0.4
       unist-util-visit: 4.1.2
@@ -9034,7 +9143,7 @@ packages:
     dependencies:
       '@types/mdast': 3.0.11
       unified: 10.1.2
-      unified-lint-rule: 2.1.1
+      unified-lint-rule: 2.1.2
       unist-util-generated: 2.0.1
       unist-util-visit: 4.1.2
     dev: true
@@ -9044,7 +9153,7 @@ packages:
     dependencies:
       '@types/mdast': 3.0.11
       unified: 10.1.2
-      unified-lint-rule: 2.1.1
+      unified-lint-rule: 2.1.2
       unist-util-generated: 2.0.1
       unist-util-position: 4.0.4
       unist-util-visit: 4.1.2
@@ -9055,7 +9164,7 @@ packages:
     dependencies:
       '@types/mdast': 3.0.11
       unified: 10.1.2
-      unified-lint-rule: 2.1.1
+      unified-lint-rule: 2.1.2
       unist-util-generated: 2.0.1
       unist-util-position: 4.0.4
       unist-util-visit: 4.1.2
@@ -9066,7 +9175,7 @@ packages:
     dependencies:
       '@types/mdast': 3.0.11
       unified: 10.1.2
-      unified-lint-rule: 2.1.1
+      unified-lint-rule: 2.1.2
       unist-util-position: 4.0.4
       unist-util-visit: 4.1.2
     dev: true
@@ -9076,7 +9185,7 @@ packages:
     dependencies:
       '@types/mdast': 3.0.11
       unified: 10.1.2
-      unified-lint-rule: 2.1.1
+      unified-lint-rule: 2.1.2
       unist-util-position: 4.0.4
       unist-util-visit: 4.1.2
     dev: true
@@ -9087,7 +9196,7 @@ packages:
       '@types/mdast': 3.0.11
       '@types/unist': 2.0.6
       unified: 10.1.2
-      unified-lint-rule: 2.1.1
+      unified-lint-rule: 2.1.2
       unist-util-position: 4.0.4
       unist-util-visit: 4.1.2
     dev: true
@@ -9097,7 +9206,7 @@ packages:
     dependencies:
       '@types/mdast': 3.0.11
       unified: 10.1.2
-      unified-lint-rule: 2.1.1
+      unified-lint-rule: 2.1.2
       unist-util-position: 4.0.4
       unist-util-visit: 4.1.2
     dev: true
@@ -9107,7 +9216,7 @@ packages:
     dependencies:
       '@types/mdast': 3.0.11
       unified: 10.1.2
-      unified-lint-rule: 2.1.1
+      unified-lint-rule: 2.1.2
       unist-util-position: 4.0.4
       unist-util-visit: 4.1.2
     dev: true
@@ -9117,7 +9226,7 @@ packages:
     dependencies:
       '@types/mdast': 3.0.11
       unified: 10.1.2
-      unified-lint-rule: 2.1.1
+      unified-lint-rule: 2.1.2
       unist-util-generated: 2.0.1
       unist-util-position: 4.0.4
       unist-util-visit: 4.1.2
@@ -10426,8 +10535,8 @@ packages:
       - supports-color
     dev: true
 
-  /unified-lint-rule@2.1.1:
-    resolution: {integrity: sha512-vsLHyLZFstqtGse2gvrGwasOmH8M2y+r2kQMoDSWzSqUkQx2MjHjvZuGSv5FUaiv4RQO1bHRajy7lSGp7XWq5A==}
+  /unified-lint-rule@2.1.2:
+    resolution: {integrity: sha512-JWudPtRN7TLFHVLEVZ+Rm8FUb6kCAtHxEXFgBGDxRSdNMnGyTU5zyYvduHSF/liExlFB3vdFvsAHnNVE/UjAwA==}
     dependencies:
       '@types/unist': 2.0.6
       trough: 2.1.0
