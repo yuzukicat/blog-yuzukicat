@@ -1,5 +1,20 @@
 [
   {
+    "title": "Algorithmic Toolbox Divide and Conquer",
+    "description": "Study Notes for Data Structures and Algorithms Specialization",
+    "date": "2023-07-05",
+    "authors": [
+      "yuzukicat"
+    ],
+    "tags": [
+      "Data Structures",
+      "Algorithms",
+      "Study Notes",
+      "University of California San Diego"
+    ],
+    "link": "/blog/algorithmic-toolbox-divide-and-conquer"
+  },
+  {
     "title": "Algorithmic Toolbox Greedy Algorithms",
     "description": "Study Notes for Data Structures and Algorithms Specialization",
     "date": "2023-06-30",
@@ -29,6 +44,7 @@
       "Certificate",
       "Study Notes"
     ],
+    "image": "/img/AZ204_C1S1_Logic_Apps_Microsoft_Power_Automate_WebJobs_Azure_Functions.png",
     "link": "/blog/az-204-professional-certificate-study-notes"
   },
   {
@@ -42,18 +58,7 @@
       "AGI",
       "Dalle"
     ],
+    "image": "/img/wild_mushroom_autumn_appetizer.png",
     "link": "/blog/generative-ai-in-food-plating"
-  },
-  {
-    "title": "Test Page using mdx NextJS SSG Cloudflare",
-    "description": "Blog, Yuzukicat, First Page, mdx, NextJS, SSG, Blog, Cloudflare",
-    "date": "2021-01-14",
-    "authors": [
-      "yuzukicat"
-    ],
-    "tags": [
-      "Test"
-    ],
-    "link": "/blog/test-page-using-nextjs-ssg-cloudflare"
   }
 ]
