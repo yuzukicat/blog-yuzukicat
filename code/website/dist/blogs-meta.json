@@ -1,5 +1,22 @@
 [
   {
+    "title": "50+ Best Anime Prompts for Midjourney Niji V5",
+    "description": "Midjourney Niji Anime AI Art is Going to Blow Your Mind",
+    "date": "2023-07-09",
+    "authors": [
+      "yuzukicat"
+    ],
+    "tags": [
+      "Midjourney",
+      "Niji",
+      "Anime",
+      "AI",
+      "Art"
+    ],
+    "image": "/img/A_girl_in_traditional_japanese_clothing_with_white_wolf_beside_her_standing_in_front_of_a_magical_torri_shrine_by_Studio_Ghibli.png",
+    "link": "/blog/50+_Best_Anime_Prompts_for_Midjourney_Niji_V5"
+  },
+  {
     "title": "Algorithmic Toolbox Divide and Conquer",
     "description": "Study Notes for Data Structures and Algorithms Specialization",
     "date": "2023-07-05",
@@ -10,8 +27,12 @@
       "Data Structures",
       "Algorithms",
       "Study Notes",
-      "University of California San Diego"
+      "University of California San Diego",
+      "Divide-and-Conquer",
+      "Linear Search",
+      "Binary Search"
     ],
+    "image": "/img/Algorithmic_Toolbox_Divide_and_Conquer.png",
     "link": "/blog/algorithmic-toolbox-divide-and-conquer"
   },
   {
