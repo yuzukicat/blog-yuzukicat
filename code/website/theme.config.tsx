@@ -12,7 +12,7 @@ import { StackBlitz } from '@/shared/embed/stack-blitz';
 import { Tweet } from '@/shared/embed/tweet';
 import { asArray } from './lib/as-array';
 
-const siteName = 'The Guild';
+const siteName = 'Blog Yuzukicat';
 
 function ensureAbsolute(url: string): string {
   return url.startsWith('/') ? `https://kamisu66.com${url}` : url;
