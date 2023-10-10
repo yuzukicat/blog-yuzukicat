@@ -11,5 +11,10 @@ type Author = {
       link: 'https://twitter.com/Nougatshepard',
       github: 'yuzukicat',
     },
+    Menci: {
+      name: 'Menci',
+      link: 'https://blog.men.ci/',
+      github: 'Menci',
+    },
   };
   

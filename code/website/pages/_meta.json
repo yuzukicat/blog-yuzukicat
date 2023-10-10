@@ -25,6 +25,13 @@
         "timestamp": false
       }
     },
+    "friend": {
+      "type": "page",
+      "theme": {
+        "layout": "full",
+        "timestamp": false
+      }
+    },
     "404": {
       "type": "page",
       "theme": {
